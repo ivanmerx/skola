@@ -56,7 +56,6 @@
     <Compile Include="Views\ViewModel.xaml.cs">
       <DependentUpon>ViewModel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\zivotopis.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
