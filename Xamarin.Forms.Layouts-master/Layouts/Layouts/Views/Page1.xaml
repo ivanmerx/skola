@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts.Views.Page1">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <RelativeLayout>
+    <StackLayout x:Name="Header" BackgroundColor="#68879b" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=1}">
+      <Label FontSize="30" Margin="0,0,0,0" TextColor="Black" Text="Ivan Merxbauer" HorizontalOptions="Center"/>
+    </StackLayout>
+
+    <StackLayout x:Name="Content" BackgroundColor="White" Padding="20" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Header, Property=Height,Constant=1}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=1}">
+      <Grid
+          BackgroundColor="Teal" >
+
+        <Grid.RowDefinitions>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+          <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Margin="160,0,0,0" FontSize="20" TextColor="Black" Text="Základní informace" Grid.Row="0" HorizontalTextAlignment="Center" Grid.Column="0"  />
+        <Label Margin="160,0,0,0" FontSize="15"  TextColor="Black" Text="+420 552 552 552" Grid.Row="1"  HorizontalTextAlignment="Center" Grid.Column="0"/>
+        <Label Margin="160,0,0,0" FontSize="15"  TextColor="Black" Text="ivan.merxbauer.cz" Grid.Row="2"  HorizontalTextAlignment="Center" Grid.Column="0"/>
+        <Label Margin="160,0,0,0" FontSize="15"  TextColor="Black" Text="merxbiv14@sps-prosek.cz" Grid.Row="3"  HorizontalTextAlignment="Center" Grid.Column="0"/>
+        <Label Margin="160,0,0,0" FontSize="20" TextColor="Black" Text="Zájmy" Grid.Row="0" Grid.Column="1"   HorizontalTextAlignment="Center" />
+        <Label Margin="160,0,0,0" FontSize="15"  TextColor="Black" Text="Sport" Grid.Row="1" Grid.Column="1"  HorizontalTextAlignment="Center"/>
+        <Label Margin="160,0,0,0" FontSize="15"  TextColor="Black" Text="Programování" Grid.Row="2" Grid.Column="1"  HorizontalTextAlignment="Center"/>
+        <Label Margin="160,0,0,0" FontSize="15"  TextColor="Black" Text="Vaření" Grid.Row="3" Grid.Column="1"  HorizontalTextAlignment="Center"/>
+        <Label Margin="160,0,0,0" FontSize="20"  TextColor="Black" Text="Vzdělání" Grid.Row="4" Grid.ColumnSpan="2"  HorizontalTextAlignment="Center"/>
+        <Label Margin="160,0,0,0" FontSize="15"  TextColor="Black" Text="Střední průmyslová škola Na Proseku" Grid.Row="5" Grid.ColumnSpan="2" HorizontalTextAlignment="Center"/>
+
+      </Grid>
+    </StackLayout>
+  </RelativeLayout>
+  <!--
+    <BoxView Color="Aqua" HorizontalOptions="FillAndExpand"/>
+  <Label Text="Spacing = 30" HorizontalOptions="Center" />
+  <BoxView Color="Red" HorizontalOptions="FillAndExpand"/>
+  <Label Text="Items are below each other." HorizontalOptions="CenterAndExpand"/>
+<Grid
+         AbsoluteLayout.LayoutBounds="0,205,1,70"
+         AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"
+         RowSpacing="0" ColumnSpacing="1"
+         BackgroundColor="Teal" >
+
+  <Grid.RowDefinitions>
+    <RowDefinition Height="10"/>
+    <RowDefinition Height="25" />
+    <RowDefinition Height="25" />
+    <RowDefinition Height="10" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+
+  White Grid Header 
+  <BoxView BackgroundColor="White" Grid.Row="0" Grid.Column="0"></BoxView>
+  <BoxView BackgroundColor="White" Grid.Row="0" Grid.Column="1"></BoxView>
+
+  <Label Text="chunkylover53@aol.com" Grid.Row="1" Grid.Column="0" />
+  <Label Text="Evergreen Terrace 642" Grid.Row="1" Grid.Column="1" />
+  <Label Text="555-7334" Grid.Row="2" Grid.Column="0" />
+  <Label Text="Springfield USA" Grid.Row="2" Grid.Column="1" />
+
+ White Grid Footer 
+  <BoxView BackgroundColor="White" Grid.Row="3" Grid.Column="0"></BoxView>
+  <BoxView BackgroundColor="White" Grid.Row="3" Grid.Column="1"></BoxView>
+</Grid>
+!-->
+</ContentPage>
