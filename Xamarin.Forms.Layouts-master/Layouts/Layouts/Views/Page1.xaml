@@ -7,7 +7,7 @@
     <StackLayout x:Name="Header" BackgroundColor="#68879b" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=1}">
       <Label FontSize="30" Margin="0,0,0,0" TextColor="Black" Text="Ivan Merxbauer" HorizontalOptions="Center"/>
     </StackLayout>
-
+<!-- Test22-->
     <StackLayout x:Name="Content" BackgroundColor="White" Padding="20" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Header, Property=Height,Constant=1}" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=1}">
       <Grid
           BackgroundColor="Teal" >
