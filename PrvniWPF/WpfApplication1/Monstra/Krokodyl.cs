@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1.Monstra
 {
+
     class Krokodyl
     {
         string name = "Krokodyl";
