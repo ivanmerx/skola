@@ -23,6 +23,6 @@
         <TextBlock x:Name="textBlock2" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="37,43,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="78"/>
         <Button x:Name="button" Content="Zaútoč" HorizontalAlignment="Left" Margin="37,46,0,12" Grid.Row="1" VerticalAlignment="Center" Width="85" Click="button_Click"/>
         <Button x:Name="button1" Content="Zaútoč" Grid.Column="1" HorizontalAlignment="Left" Margin="25,46,0,12" Grid.Row="1" VerticalAlignment="Center" Width="90" Click="button1_Click"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="62,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="126" Height="31"/>
     </Grid>
 </Window>

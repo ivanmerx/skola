@@ -8,16 +8,17 @@ namespace WpfApplication1.Monstra
 {
     class UtokPestmi : typBoje
     {
-        public int hodnotaSily
+        int hodnotaSily = 30;
+        int typBoje.hodnotaSily
         {
             get
             {
-                throw new NotImplementedException();
+                return hodnotaSily;
             }
 
             set
             {
-                throw new NotImplementedException();
+                hodnotaSily = value;
             }
         }
 

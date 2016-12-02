@@ -23,11 +23,11 @@ namespace WpfApplication1.Monstra
         {
             Krokodyl krokodyl = new Krokodyl();
             Bojovnik bojovnik = new Bojovnik();
-            bojovnik.typBoje = new UtokNohama();
+            bojovnik.typBoje = new UtokPestmi();
             InitializeComponent();
             textBlock.Text = krokodyl.nazev;
             textBlock2.Text = bojovnik.name;
-            textBlock3.Text = "Tvá hodnota útoku je" + bojovnik.typBoje.hodnotaSily;
+            textBlock3.Text = "Hodnota útoku je " + bojovnik.typBoje.hodnotaSily;
             //if
 
             bojovnik.typBoje = new UtokNohama();
