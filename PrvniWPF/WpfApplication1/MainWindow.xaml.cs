@@ -23,12 +23,16 @@ namespace WpfApplication1
         private int _noClicks;
         public MainWindow()
         {
+            Otazky otazky = new Otazky();
             InitializeComponent();
+            textBlock2.Text = otazky.VytvorPriklad();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            /*
             _noClicks++;
             button.Content = _noClicks.ToString();
+            */
         }
     }
 }

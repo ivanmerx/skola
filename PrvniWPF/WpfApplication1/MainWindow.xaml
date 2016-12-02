@@ -20,7 +20,7 @@
 
         <Button x:Name="button" Width="120" Height="30" VerticalAlignment="Top" Content="Ano" HorizontalAlignment="Right" Click="Button_Click" Grid.Row="2" Grid.Column="0" Margin="0,0,10,0"/>
         <Button x:Name="button2" Width="120" Height="30" VerticalAlignment="Top" Content="Ne" HorizontalAlignment="Left" Click="Button_Click" Grid.Row="2" Grid.Column="1" Margin="10,0,0,0"/>
-        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" x:Name="textBlock" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Otázky" FontSize="35" FontWeight="Bold" TextDecorations="Underline" />
-        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" x:Name="textBlock2" Grid.ColumnSpan="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Text="Zde bude otázka" FontSize="30" FontWeight="Bold" TextDecorations="Underline" />
+        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" x:Name="textBlock" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Kolik je" FontSize="35" FontWeight="Bold" TextDecorations="Underline" />
+        <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" x:Name="textBlock2" Grid.ColumnSpan="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Text="Zde bude příklad" FontSize="30" FontWeight="Bold" TextDecorations="Underline" />
     </Grid>
 </Window>
