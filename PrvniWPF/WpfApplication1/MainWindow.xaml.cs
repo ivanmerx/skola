@@ -21,18 +21,64 @@ namespace WpfApplication1
     public partial class MainWindow : Window
     {
         private int _noClicks;
+        Otazky otazky = new Otazky();
         public MainWindow()
         {
-            Otazky otazky = new Otazky();
+            Random rnd = new Random();
             InitializeComponent();
-            textBlock2.Text = otazky.VytvorPriklad();
+            var prvnicislo = otazky.prvnicislo();
+            var druhycislo = otazky.druhycislo();
+            var operandy = otazky.operandy();
+            textBlock2.Text = prvnicislo + operandy + druhycislo;
+            int buttony = rnd.Next(1,2);
+            if (buttony == 2)
+            {
+                button.Content = rnd.Next(1, 200);
+                switch (operandy)
+                {
+                    case "+":
+                        button2.Content = button.Content = prvnicislo + druhycislo;
+                        break;
+                    case "-":
+                        button2.Content = button.Content = prvnicislo - druhycislo;
+                        break;
+                    case "*":
+                        button2.Content = button.Content = prvnicislo * druhycislo;
+                        break;
+                    case "/":
+                        button2.Content = button.Content = prvnicislo / druhycislo;
+                        break;
+                    default:
+                        button2.Content = "Něco random";
+                        break;
+
+                }
+            }else
+            {
+                button2.Content = rnd.Next(1, 200);
+                switch (operandy)
+                {
+                    case "+":
+                        button.Content = button.Content = prvnicislo + druhycislo;
+                        break;
+                    case "-":
+                        button.Content = button.Content = prvnicislo - druhycislo;
+                        break;
+                    case "*":
+                        button.Content = button.Content = prvnicislo * druhycislo;
+                        break;
+                    case "/":
+                        button.Content = button.Content = prvnicislo / druhycislo;
+                        break;
+                    default:
+                        button.Content = "Něco random";
+                        break;
+
+                }
+            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            /*
-            _noClicks++;
-            button.Content = _noClicks.ToString();
-            */
         }
     }
 }
