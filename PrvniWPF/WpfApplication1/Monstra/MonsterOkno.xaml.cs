@@ -19,10 +19,10 @@ namespace WpfApplication1.Monstra
     /// </summary>
     public partial class MonsterOkno : Window
     {
+        Bojovnik bojovnik = new Bojovnik();
         public MonsterOkno()
         {
             Krokodyl krokodyl = new Krokodyl();
-            Bojovnik bojovnik = new Bojovnik();
             bojovnik.typBoje = new UtokPestmi();
             InitializeComponent();
             textBlock.Text = krokodyl.nazev;
@@ -43,6 +43,8 @@ namespace WpfApplication1.Monstra
         private void button_Click(object sender, RoutedEventArgs e)
         {
             ProgressBar.Value--;
+            int promenna = bojovnik.typBoje.hodnotaSily;
+            ProgressBar.Value= ProgressBar.Value - promenna;
         }
 
         private void ProgressBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)

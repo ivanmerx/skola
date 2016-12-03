@@ -53,7 +53,7 @@ namespace WpfApplication1
                         break;
 
                 }
-            }else
+            }else if(buttony == 1)
             {
                 button2.Content = rnd.Next(1, 200);
                 switch (operandy)
