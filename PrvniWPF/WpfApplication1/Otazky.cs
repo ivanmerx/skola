@@ -26,7 +26,7 @@ namespace WpfApplication1
             operandy.Add("-");
             operandy.Add("*");
             operandy.Add("/");
-            int operand = rnd.Next(1, 5);
+            int operand = rnd.Next(0, 4);
             return operandy[operand];
         }
     }

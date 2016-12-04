@@ -31,22 +31,23 @@ namespace WpfApplication1
             var operandy = otazky.operandy();
             textBlock2.Text = prvnicislo + operandy + druhycislo;
             int buttony = rnd.Next(1,2);
+    //        textBlock1.Text = buttony.ToString();
             if (buttony == 2)
             {
-                button.Content = rnd.Next(1, 200);
+                button.Content = rnd.Next(1, 200);  
                 switch (operandy)
                 {
                     case "+":
-                        button2.Content = button.Content = prvnicislo + druhycislo;
+                        button2.Content = button2.Content = prvnicislo + druhycislo;
                         break;
                     case "-":
-                        button2.Content = button.Content = prvnicislo - druhycislo;
+                        button2.Content = button2.Content = prvnicislo - druhycislo;
                         break;
                     case "*":
-                        button2.Content = button.Content = prvnicislo * druhycislo;
+                        button2.Content = button2.Content = prvnicislo * druhycislo;
                         break;
                     case "/":
-                        button2.Content = button.Content = prvnicislo / druhycislo;
+                        button2.Content = button2.Content = prvnicislo / druhycislo;
                         break;
                     default:
                         button2.Content = "Něco random";
