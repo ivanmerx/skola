@@ -98,21 +98,25 @@ namespace WpfApplication1
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             if (button.Content.ToString() == celkem.ToString())
             {
+                celkem = 0;
                 level++;
+
             }
-            else if(button2.Content.ToString() == celkem.ToString())
+            else if (button2.Content.ToString() == celkem.ToString())
             {
+                celkem = 0;
                 level++;
-            }else
+
+            }
+            else
             {
                 zivoty--;
             }
-            textBlock1.Text= celkem.ToString();
-            textBlock4.Text = "Životy: " + zivoty.ToString();
-            textBlock3.Text = "Úroveň: " + level.ToString();
+                textBlock1.Text = celkem.ToString();
+                textBlock4.Text = "Životy: " + zivoty.ToString();
+                textBlock3.Text = "Úroveň: " + level.ToString();
+            }
         }
-    }
 }
