@@ -23,5 +23,7 @@
         <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" x:Name="textBlock" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Kolik je" FontSize="35" FontWeight="Bold" TextDecorations="Underline" />
         <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}" x:Name="textBlock2" Grid.ColumnSpan="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Text="Zde bude příklad" FontSize="30" FontWeight="Bold" TextDecorations="Underline" />
         <TextBlock x:Name="textBlock1" Grid.Column="1" HorizontalAlignment="Left" Margin="174,53,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,81,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" Grid.Column="1" HorizontalAlignment="Left" Margin="192,84,0,-9" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
     </Grid>
 </Window>

@@ -23,82 +23,96 @@ namespace WpfApplication1
         private int _noClicks;
         Otazky otazky = new Otazky();
         int celkem;
+        int level = 1;
+        int zivoty = 10;
         public MainWindow()
         {
-            bool won = false;
-       //     while (won == false )
-       //     {
-                Random rnd = new Random();
-                InitializeComponent();
-                var prvnicislo = otazky.prvnicislo();
-                var druhycislo = otazky.druhycislo();
-                var operandy = otazky.operandy();
-                textBlock2.Text = prvnicislo + operandy + druhycislo;
-                int buttony = rnd.Next(1, 2);
-                //        textBlock1.Text = buttony.ToString();
-                if (buttony == 2)
+            Random rnd = new Random();
+            InitializeComponent();
+            textBlock4.Text = "Životy: " + zivoty.ToString();
+            textBlock3.Text = "Úroveň: " + level.ToString();
+            var prvnicislo = otazky.prvnicislo();
+            var druhycislo = otazky.druhycislo();
+            var operandy = otazky.operandy();
+            textBlock2.Text = prvnicislo + operandy + druhycislo;
+            int buttony = rnd.Next(1, 1000);
+            //        textBlock1.Text = buttony.ToString();
+            if (buttony % 2 == 0)
+            {
+                int druhybutton = 2;
+                button.Content = rnd.Next(1, 200);
+                switch (operandy)
                 {
-                    int druhybutton = 2;
-                    button.Content = rnd.Next(1, 200);
-                    switch (operandy)
-                    {
-                        case "+":
-                            button2.Content = button2.Content = prvnicislo + druhycislo;
-                            celkem = prvnicislo + druhycislo;
-                            break;
-                        case "-":
-                            button2.Content = button2.Content = prvnicislo - druhycislo;
-                            celkem = prvnicislo - druhycislo;
-                            break;
-                        case "*":
-                            button2.Content = button2.Content = prvnicislo * druhycislo;
-                            celkem = prvnicislo * druhycislo;
-                            break;
-                        case "/":
-                            button2.Content = button2.Content = prvnicislo / druhycislo;
-                            celkem = prvnicislo / druhycislo;
-                            break;
-                        default:
-                            button2.Content = "Něco random";
-                            break;
+                    case "+":
+                        button2.Content = button2.Content = prvnicislo + druhycislo;
+                        celkem = prvnicislo + druhycislo;
+                        break;
+                    case "-":
+                        button2.Content = button2.Content = prvnicislo - druhycislo;
+                        celkem = prvnicislo - druhycislo;
+                        break;
+                    case "*":
+                        button2.Content = button2.Content = prvnicislo * druhycislo;
+                        celkem = prvnicislo * druhycislo;
+                        break;
+                    case "/":
+                        button2.Content = button2.Content = prvnicislo / druhycislo;
+                        celkem = prvnicislo / druhycislo;
+                        break;
+                    default:
+                        button2.Content = "Něco random";
+                        break;
 
-                    }
-                    var spravne = button2.Content;
                 }
-                else if (buttony == 1)
-                {
-                    int prvnibutton = 1;
-                    button2.Content = rnd.Next(1, 200);
-                    switch (operandy)
-                    {
-                        case "+":
-                            button.Content = button.Content = prvnicislo + druhycislo;
-                            celkem = prvnicislo + druhycislo;
-                            break;
-                        case "-":
-                            button.Content = button.Content = prvnicislo - druhycislo;
-                            celkem = prvnicislo - druhycislo;
-                            break;
-                        case "*":
-                            button.Content = button.Content = prvnicislo * druhycislo;
-                            celkem = prvnicislo * druhycislo;
-                            break;
-                        case "/":
-                            button.Content = button.Content = prvnicislo / druhycislo;
-                            celkem = prvnicislo / druhycislo;
-                            break;
-                        default:
-                            button.Content = "Něco random";
-                            break;
-
-                    }
-                    var spravne = button.Content;
-                }
+                var spravne = button2.Content;
             }
-     //   }
+            else if (buttony % 2 != 0)
+            {
+                int prvnibutton = 1;
+                button2.Content = rnd.Next(1, 200);
+                switch (operandy)
+                {
+                    case "+":
+                        button.Content = button.Content = prvnicislo + druhycislo;
+                        celkem = prvnicislo + druhycislo;
+                        break;
+                    case "-":
+                        button.Content = button.Content = prvnicislo - druhycislo;
+                        celkem = prvnicislo - druhycislo;
+                        break;
+                    case "*":
+                        button.Content = button.Content = prvnicislo * druhycislo;
+                        celkem = prvnicislo * druhycislo;
+                        break;
+                    case "/":
+                        button.Content = button.Content = prvnicislo / druhycislo;
+                        celkem = prvnicislo / druhycislo;
+                        break;
+                    default:
+                        button.Content = "Něco random";
+                        break;
+
+                }
+                var spravne = button.Content;
+            }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            if (button.Content.ToString() == celkem.ToString())
+            {
+                level++;
+            }
+            else if(button2.Content.ToString() == celkem.ToString())
+            {
+                level++;
+            }else
+            {
+                zivoty--;
+            }
             textBlock1.Text= celkem.ToString();
+            textBlock4.Text = "Životy: " + zivoty.ToString();
+            textBlock3.Text = "Úroveň: " + level.ToString();
         }
     }
 }
