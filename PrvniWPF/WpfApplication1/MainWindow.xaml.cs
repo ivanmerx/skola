@@ -22,13 +22,17 @@ namespace WpfApplication1
     {
         private int _noClicks;
         Otazky otazky = new Otazky();
-        int celkem;
+        decimal celkem;
         int level = 1;
         int zivoty = 10;
         public MainWindow()
         {
-            Random rnd = new Random();
             InitializeComponent();
+            ahoj();
+        }
+        public void ahoj()
+        {
+            Random rnd = new Random();
             textBlock4.Text = "Životy: " + zivoty.ToString();
             textBlock3.Text = "Úroveň: " + level.ToString();
             var prvnicislo = otazky.prvnicislo();
@@ -44,19 +48,19 @@ namespace WpfApplication1
                 switch (operandy)
                 {
                     case "+":
-                        button2.Content = button2.Content = prvnicislo + druhycislo;
+                        button2.Content = prvnicislo + druhycislo;
                         celkem = prvnicislo + druhycislo;
                         break;
                     case "-":
-                        button2.Content = button2.Content = prvnicislo - druhycislo;
+                        button2.Content = prvnicislo - druhycislo;
                         celkem = prvnicislo - druhycislo;
                         break;
                     case "*":
-                        button2.Content = button2.Content = prvnicislo * druhycislo;
+                        button2.Content =prvnicislo * druhycislo;
                         celkem = prvnicislo * druhycislo;
                         break;
                     case "/":
-                        button2.Content = button2.Content = prvnicislo / druhycislo;
+                        button2.Content =prvnicislo / druhycislo;
                         celkem = prvnicislo / druhycislo;
                         break;
                     default:
@@ -64,7 +68,7 @@ namespace WpfApplication1
                         break;
 
                 }
-                var spravne = button2.Content;
+                button2.Content = celkem;
             }
             else if (buttony % 2 != 0)
             {
@@ -73,19 +77,19 @@ namespace WpfApplication1
                 switch (operandy)
                 {
                     case "+":
-                        button.Content = button.Content = prvnicislo + druhycislo;
+                        button.Content = prvnicislo + druhycislo;
                         celkem = prvnicislo + druhycislo;
                         break;
                     case "-":
-                        button.Content = button.Content = prvnicislo - druhycislo;
+                        button.Content = prvnicislo - druhycislo;
                         celkem = prvnicislo - druhycislo;
                         break;
                     case "*":
-                        button.Content = button.Content = prvnicislo * druhycislo;
+                        button.Content = prvnicislo * druhycislo;
                         celkem = prvnicislo * druhycislo;
                         break;
                     case "/":
-                        button.Content = button.Content = prvnicislo / druhycislo;
+                        button.Content =prvnicislo / druhycislo;
                         celkem = prvnicislo / druhycislo;
                         break;
                     default:
@@ -93,30 +97,44 @@ namespace WpfApplication1
                         break;
 
                 }
-                var spravne = button.Content;
+                button.Content = celkem;
             }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             if (button.Content.ToString() == celkem.ToString())
             {
-                celkem = 0;
+                ahoj();
                 level++;
 
-            }
-            else if (button2.Content.ToString() == celkem.ToString())
+            }else
             {
-                celkem = 0;
-                level++;
-
-            }
-            else
-            {
+                ahoj();
                 zivoty--;
             }
                 textBlock1.Text = celkem.ToString();
                 textBlock4.Text = "Životy: " + zivoty.ToString();
                 textBlock3.Text = "Úroveň: " + level.ToString();
-            }
         }
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+
+            if (button2.Content.ToString() == celkem.ToString())
+            {
+                ahoj();
+                level++;
+
+            }
+            else
+            {
+                ahoj();
+                zivoty--;
+            }
+            textBlock1.Text = celkem.ToString();
+            textBlock4.Text = "Životy: " + zivoty.ToString();
+            textBlock3.Text = "Úroveň: " + level.ToString();
+        }
+
+    }
 }
