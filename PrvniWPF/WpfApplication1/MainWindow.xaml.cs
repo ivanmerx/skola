@@ -18,6 +18,8 @@ namespace WpfApplication1
     /// <summary>
     /// Interakční logika pro MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
         private int _noClicks;
