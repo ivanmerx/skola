@@ -22,7 +22,7 @@ namespace WpfApplication1
     {
         private int _noClicks;
         Otazky otazky = new Otazky();
-        decimal celkem;
+        float celkem;
         int level = 1;
         int zivoty = 10;
         public MainWindow()
