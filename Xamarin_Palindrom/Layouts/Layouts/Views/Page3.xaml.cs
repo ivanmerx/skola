@@ -25,6 +25,7 @@ namespace Layouts.Views
             ListMain.Add(new Osoba("Libor", "Tomana", 50, 123456789));
             ListMain.Add(new Osoba("Šimon", "Hladký", 9, 123456789));
             ListMain.Add(new Osoba("Ivan", "Autosalon", 5, 123456789));
+
             //list.ItemsSource = ListMain;
             list2.ItemsSource = ListMain;
 
