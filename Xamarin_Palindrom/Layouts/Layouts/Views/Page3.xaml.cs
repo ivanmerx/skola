@@ -13,7 +13,22 @@ namespace Layouts.Views
         public Page3()
         {
             InitializeComponent();
+           //soba osoba = new Osoba();
+            /*
+            osoba.Jmeno = "Tomáš";
+            osoba.Prijmeni = "Klokočka";
+            osoba.Vek = 12;
+            osoba.TelCislo = 123456789;
+            */
+            List<Osoba> ListMain = new List<Osoba>();
+            ListMain.Add(new Osoba("Tomáš", "Klokočka", 12, 123456789));
+            ListMain.Add(new Osoba("Libor", "Tomana", 50, 123456789));
+            ListMain.Add(new Osoba("Šimon", "Hladký", 9, 123456789));
+            ListMain.Add(new Osoba("Ivan", "Autosalon", 5, 123456789));
+            //list.ItemsSource = ListMain;
+            list2.ItemsSource = ListMain;
         }
+        /*
         private void ZmenaTextu(object sender, TextChangedEventArgs e)
         {
             Vysledek.Text = " ";
@@ -41,5 +56,6 @@ namespace Layouts.Views
                 }
             }
         }
+        */
     }
 }

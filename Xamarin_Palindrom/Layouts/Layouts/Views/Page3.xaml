@@ -5,9 +5,38 @@
   <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
   <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
     <StackLayout Spacing="15"  >
+
+
+      <!--
+            <ListView x:Name="list"></ListView>
       <Entry TextChanged="ZmenaTextu"></Entry>
       <Label x:Name ="Vysledek" HorizontalTextAlignment="Center"></Label>
       <Label x:Name ="Vysledek3" HorizontalTextAlignment="Center"></Label>
+      !-->
+    </StackLayout>
+    <StackLayout Spacing="15">
+      <ListView x:Name="list2">
+        
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid HeightRequest="100">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*"></RowDefinition>
+                  <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*"></ColumnDefinition>
+                  <ColumnDefinition Width="4*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="{Binding ZiskejJmeno}" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"></Label>
+                <Label Text="{Binding ZiskejVek}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"></Label>
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+        
+      </ListView>
     </StackLayout>
   </ScrollView>
 </ContentPage>
