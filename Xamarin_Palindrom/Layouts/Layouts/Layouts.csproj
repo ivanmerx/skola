@@ -44,6 +44,9 @@
     <Compile Include="Views\CombinatedLayoutPage.xaml.cs">
       <DependentUpon>CombinatedLayoutPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\InfoOsoby.xaml.cs">
+      <DependentUpon>InfoOsoby.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.cs" />
     <Compile Include="Views\Page3.xaml.cs">
       <DependentUpon>Page3.xaml</DependentUpon>
@@ -112,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Page3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\InfoOsoby.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

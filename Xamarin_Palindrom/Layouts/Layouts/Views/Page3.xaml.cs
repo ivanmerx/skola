@@ -27,6 +27,11 @@ namespace Layouts.Views
             ListMain.Add(new Osoba("Ivan", "Autosalon", 5, 123456789));
             //list.ItemsSource = ListMain;
             list2.ItemsSource = ListMain;
+
+        }
+        private void item(object sender, ItemTappedEventArgs e)
+        {
+            Navigation.PushAsync(new InfoOsoby(e.Item as Osoba));
         }
         /*
         private void ZmenaTextu(object sender, TextChangedEventArgs e)

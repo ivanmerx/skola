@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Layouts
 {
-    class Osoba
+  public  class Osoba
     {
         private string jmeno;
         private int vek;

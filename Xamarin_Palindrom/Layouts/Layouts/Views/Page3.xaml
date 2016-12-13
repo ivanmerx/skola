@@ -15,22 +15,22 @@
       !-->
     </StackLayout>
     <StackLayout Spacing="15">
-      <ListView x:Name="list2">
+      <ListView x:Name="list2" ItemTapped="item">
         
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
               <Grid HeightRequest="100">
-                <Grid.RowDefinitions>
-                  <RowDefinition Height="*"></RowDefinition>
-                  <RowDefinition Height="*"></RowDefinition>
-                </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="*"></ColumnDefinition>
-                  <ColumnDefinition Width="4*"></ColumnDefinition>
+                  <ColumnDefinition></ColumnDefinition>
+                  <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Label Text="{Binding ZiskejJmeno}" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"></Label>
-                <Label Text="{Binding ZiskejVek}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"></Label>
+                <Image x:Name="Image" Source="http://uppix.3dvf.com/images/tetescvfv.jpg"></Image>
+                <StackLayout Grid.Column="1">
+                  <Label Text="{Binding ZiskejJmeno}" FontAttributes="Bold" ></Label>
+                  <Label Text="{Binding ZiskejVek}" FontAttributes="Bold" ></Label>
+                </StackLayout>
               </Grid>
             </ViewCell>
           </DataTemplate>
