@@ -12,9 +12,19 @@ namespace ConsoleApplication5
         {
             Osoba osoba = new Osoba();
             osoba.stavUctu = 5000;
+            osoba.Jmeno = "Tomáš";
+            osoba.Prijmeni = "Klokočka";
             osoba.PlaticiStrategie = new Sclenstvim();
             osoba.KoupitVec(1000);
-            Console.WriteLine(osoba.stavUctu);
+            Console.WriteLine(osoba.Jmeno+ " " +osoba.Prijmeni+ " " +osoba.stavUctu);
+
+            Osoba osoba2 = new Osoba();
+            osoba2.stavUctu = 5000;
+            osoba2.Jmeno = "Libor";
+            osoba2.Prijmeni = "Dočkal";
+            osoba2.PlaticiStrategie = new Bezclenstvi();
+            osoba2.KoupitVec(1000);
+            Console.WriteLine(osoba2.Jmeno + " " + osoba2.Prijmeni + " " + osoba2.stavUctu);
         }
     }
 }
