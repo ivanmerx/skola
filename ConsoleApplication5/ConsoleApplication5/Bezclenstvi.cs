@@ -10,7 +10,7 @@ namespace ConsoleApplication5
     {
         public void Zaplat(Osoba osoba, int cena)
         {
-            osoba.stavUctu -= cena;
+            osoba.Konecnacena= osoba.stavUctu - cena;
         }
     }
 }

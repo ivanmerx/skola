@@ -16,7 +16,7 @@ namespace ConsoleApplication5
             osoba.Prijmeni = "Klokočka";
             osoba.PlaticiStrategie = new Sclenstvim();
             osoba.KoupitVec(1000);
-            Console.WriteLine(osoba.Jmeno+ " " +osoba.Prijmeni+ " " +osoba.stavUctu);
+            Console.WriteLine(osoba.Jmeno+ " " +osoba.Prijmeni+ " " +osoba.stavUctu + " " +osoba.Konecnacena);
 
             Osoba osoba2 = new Osoba();
             osoba2.stavUctu = 5000;
@@ -24,7 +24,7 @@ namespace ConsoleApplication5
             osoba2.Prijmeni = "Dočkal";
             osoba2.PlaticiStrategie = new Bezclenstvi();
             osoba2.KoupitVec(1000);
-            Console.WriteLine(osoba2.Jmeno + " " + osoba2.Prijmeni + " " + osoba2.stavUctu);
+            Console.WriteLine(osoba2.Jmeno + " " + osoba2.Prijmeni + " " + osoba2.stavUctu + " " + osoba2.Konecnacena);
         }
     }
 }

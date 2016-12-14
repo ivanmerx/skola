@@ -9,10 +9,9 @@ namespace ConsoleApplication5
     class Sclenstvim : PlaticiStrategie
     {
         double sleva = 0.75;
-
         public void Zaplat(Osoba osoba, int cena)
         {
-            osoba.stavUctu -= Int32.Parse((cena*sleva).ToString());
+            osoba.Konecnacena = osoba.stavUctu - Int32.Parse((cena*sleva).ToString());
         }
     }
 }

@@ -29,8 +29,12 @@ namespace WpfApplication1.Monstra
             textBlock2.Text = bojovnik.name;
             textBlock3.Text = "Hodnota útoku je " + bojovnik.typBoje.hodnotaSily;
             //if
+            if(ProgressBar.Value < 50)
+            {
+                bojovnik.typBoje = new UtokNohama();
+                int promenna = bojovnik.typBoje.hodnotaSily;
+            }
 
-            bojovnik.typBoje = new UtokNohama();
            // typBoje typ = new UtokNohama();
            /// typ.hodnotaSily;
         }
@@ -42,9 +46,10 @@ namespace WpfApplication1.Monstra
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            ProgressBar.Value--;
+            //ProgressBar2.Value--;
             int promenna = bojovnik.typBoje.hodnotaSily;
-            ProgressBar.Value= ProgressBar.Value - promenna;
+            ProgressBar.Value= ProgressBar2.Value - promenna;
+            textBlock3.Text = "Hodnota útoku je " + bojovnik.typBoje.hodnotaSily;
         }
 
         private void ProgressBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
