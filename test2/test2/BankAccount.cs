@@ -30,6 +30,7 @@ namespace test2
             }
             set
             {
+
                 exchangeStrategy = value;
             }
         }
