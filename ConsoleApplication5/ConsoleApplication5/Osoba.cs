@@ -12,6 +12,7 @@ namespace ConsoleApplication5
         private string prijmeni;
         private int stavuctu;
         private PlaticiStrategie platiciStrategie;
+        private int konecnacena;
         public string Jmeno
         {
             get
@@ -63,7 +64,18 @@ namespace ConsoleApplication5
                 platiciStrategie = value;
             }
         }
+        public int Konecnacena
+        {
+            get
+            {
+                return konecnacena;
+            }
 
+            set
+            {
+                konecnacena = value;
+            }
+        }
         public void KoupitVec(int cena)
         {
             platiciStrategie.Zaplat(this,cena);
