@@ -16,6 +16,7 @@ namespace ConsoleApplication5
             osoba.Prijmeni = "Klokočka";
             osoba.PlaticiStrategie = new Sclenstvim();
             osoba.KoupitVec(1000);
+            osoba.PlaticiStrategie.Neco = "kokot";
             Console.WriteLine(osoba.Jmeno+ " " +osoba.Prijmeni+ " " +osoba.stavUctu);
 
             Osoba osoba2 = new Osoba();

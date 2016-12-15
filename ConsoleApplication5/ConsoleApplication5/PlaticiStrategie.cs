@@ -8,6 +8,11 @@ namespace ConsoleApplication5
 {
     interface PlaticiStrategie
     {
+        string Neco{
+        get;set;    
+        }
+
+
         void Zaplat(Osoba osoba,int cena);
     }
 }
