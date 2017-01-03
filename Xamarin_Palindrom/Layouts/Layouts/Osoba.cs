@@ -42,6 +42,7 @@ namespace Layouts
         }
         public string ZiskejJmeno => jmeno + " " + prijmeni;
         public string ZiskejVek => "Věk:" + vek;
+        public string ZiskejTelCislo => "TelCislo:" + telCislo;
         public override string ToString()
         {
             return jmeno + " " + prijmeni + " " + "Věk:"+vek + " " + "Telefonní číslo:"+telCislo;

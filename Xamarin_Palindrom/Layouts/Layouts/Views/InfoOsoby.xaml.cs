@@ -18,9 +18,12 @@ namespace Layouts.Views
         public InfoOsoby(Osoba osoba)
         {
             InitializeComponent();
+            telcislo.Text = osoba.ZiskejTelCislo;
             jmeno.Text=osoba.Jmeno;
             prijmeni.Text = osoba.Prijmeni;
             Image.Source = "http://uppix.3dvf.com/images/tetescvfv.jpg";
+
+
 
         }
     }

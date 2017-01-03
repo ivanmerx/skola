@@ -30,6 +30,7 @@
                 <StackLayout Grid.Column="1">
                   <Label Text="{Binding ZiskejJmeno}" FontAttributes="Bold" ></Label>
                   <Label Text="{Binding ZiskejVek}" FontAttributes="Bold" ></Label>
+                  <Label Text="{Binding ZiskejTelCislo}" FontAttributes="Bold" ></Label>
                 </StackLayout>
               </Grid>
             </ViewCell>

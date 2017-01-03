@@ -3,9 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Layouts.Views.InfoOsoby">
   <StackLayout>
-    <Image x:Name="Image" HorizontalOptions="Center"></Image>
+    <Image x:Name="Image" WidthRequest="100" HorizontalOptions="Center"></Image>
     <Label x:Name="jmeno" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label x:Name="prijmeni" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Label x:Name="telcislo" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Button x:Name="button" Text ="Zavolat" VerticalOptions="Center" HorizontalOptions="Center" />
   </StackLayout>
 
 </ContentPage>
