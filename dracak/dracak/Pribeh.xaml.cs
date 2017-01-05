@@ -33,7 +33,8 @@ namespace dracak
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            App.hrac.Rasa = (sender as Button).ToString();
+           // App.hrac.Rasa = (sender as Button).ToString();
+            App.hrac.Rasa = (e.Source as Button).Content.ToString();
             App.Current.MainWindow.Content = new Startpribeh();
         }
 
