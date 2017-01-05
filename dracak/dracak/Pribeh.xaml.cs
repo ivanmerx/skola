@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace dracak
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Pribeh.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Pribeh : Page
     {
-        public MainWindow()
+        public Pribeh()
         {
             InitializeComponent();
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Content = new Pribeh();
         }
     }
 }
