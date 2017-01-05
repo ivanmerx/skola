@@ -27,6 +27,8 @@ namespace dracak
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+
+            App.hrac.Jmeno = textBlock1.Text;
             this.Content = new Pribeh();
         }
     }

@@ -16,26 +16,14 @@ using System.Windows.Shapes;
 namespace dracak
 {
     /// <summary>
-    /// Interaction logic for Pribeh.xaml
+    /// Interaction logic for Startpribeh.xaml
     /// </summary>
-    public partial class Pribeh : Page
+    public partial class Startpribeh : Page
     {
-        public Pribeh()
+        public Startpribeh()
         {
             InitializeComponent();
-            TextBlock2.Text = "Vítej válečníku " + App.hrac.Jmeno + "\nVyber si rasu";
+            textBlock.Text = "Vítej válečníku " + App.hrac.Rasa + "\nVyber si rasu";
         }
-
-        private void checkBox_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            App.hrac.Rasa = (sender as Button).ToString();
-            App.Current.MainWindow.Content = new Startpribeh();
-        }
-
     }
 }

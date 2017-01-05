@@ -13,5 +13,6 @@ namespace dracak
     /// </summary>
     public partial class App : Application
     {
+        public static postava hrac = new postava();
     }
 }
