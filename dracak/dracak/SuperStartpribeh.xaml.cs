@@ -16,19 +16,15 @@ using System.Windows.Shapes;
 namespace dracak
 {
     /// <summary>
-    /// Interaction logic for Startpribeh.xaml
+    /// Interaction logic for SuperStartpribeh.xaml
     /// </summary>
-    public partial class Startpribeh : Page
+    public partial class SuperStartpribeh : Page
     {
-        public Startpribeh()
+        public SuperStartpribeh()
         {
             InitializeComponent();
-            textBlock.Text = "Vítej válečníku " + App.hrac.Jmeno + "\nVybral jsi si rasu " + App.hrac.Rasa + "\nNyní si vyber výzbroj";
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            App.Current.MainWindow.Content = new SuperStartpribeh();
+            App.hrac.vybaveni = new Mec();
+            textBlock.Text = App.hrac.vybaveni.hodnotaUtoku.ToString();
         }
     }
 }

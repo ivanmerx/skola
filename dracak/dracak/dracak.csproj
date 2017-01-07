@@ -62,6 +62,9 @@
     <Compile Include="Startpribeh.xaml.cs">
       <DependentUpon>Startpribeh.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SuperStartpribeh.xaml.cs">
+      <DependentUpon>SuperStartpribeh.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -79,6 +82,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Startpribeh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SuperStartpribeh.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

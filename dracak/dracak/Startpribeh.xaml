@@ -11,6 +11,9 @@
 
     <Grid>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="101,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Meč" HorizontalAlignment="Left" Margin="44,94,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button1" Content="Sekera" HorizontalAlignment="Left" Margin="44,127,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button2" Content="Hůl" HorizontalAlignment="Left" Margin="44,161,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
 
     </Grid>
 </Page>

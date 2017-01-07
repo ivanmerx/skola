@@ -14,12 +14,12 @@ namespace dracak
         {
             get
             {
-                return hodnotaUtoku;
+                return HodnotaUtoku;
             }
 
             set
             {
-                hodnotaUtoku = value;
+                HodnotaUtoku = value;
             }
         }
 
@@ -27,12 +27,12 @@ namespace dracak
         {
             get
             {
-                return nazev;
+                return Nazev;
             }
 
             set
             {
-                nazev = value;
+                Nazev = value;
             }
         }
     }
