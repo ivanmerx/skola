@@ -10,6 +10,18 @@ namespace dracak
     {
         private string jmeno;
         private string rasa;
+        IVybaveni interfaceVybaveni;
+        public IVybaveni vybaveni
+        {
+            get
+            {
+                return interfaceVybaveni;
+            }
+            set
+            {
+                interfaceVybaveni = value;
+            }
+        }
         public string Jmeno
         {
             get

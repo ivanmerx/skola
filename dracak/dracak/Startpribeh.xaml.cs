@@ -23,7 +23,7 @@ namespace dracak
         public Startpribeh()
         {
             InitializeComponent();
-            textBlock.Text = "Vítej válečníku " + App.hrac.Rasa + "\nVyber si rasu";
+            textBlock.Text = "Vítej válečníku " + App.hrac.Jmeno + "\nVybral jsi si rasu " + App.hrac.Rasa;
         }
     }
 }
