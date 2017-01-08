@@ -47,7 +47,7 @@ namespace Layouts.Views
                         },
                         new Button
                         {
-                            Text = "Palindrom",
+                            Text = "Telefonní seznam",
                             Command = showPageCommand(new Page3())
                         }
 

@@ -7,7 +7,7 @@
     <Label x:Name="jmeno" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label x:Name="prijmeni" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label x:Name="telcislo" VerticalOptions="Center" HorizontalOptions="Center" />
-    <Button x:Name="button" Text ="Zavolat" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Button x:Name="button" Text ="Zavolat" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ButtonClick"/>
   </StackLayout>
 
 </ContentPage>

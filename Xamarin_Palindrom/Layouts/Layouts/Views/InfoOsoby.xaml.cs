@@ -26,6 +26,17 @@ namespace Layouts.Views
 
 
         }
+
+        public void ButtonClick(Object sender, EventArgs e)
+        {
+            /*
+            intent.button.Click += delegate {
+                var uri = Android.Net.Uri.Parse("tel:1112223333");
+                var intent = new Intent(Intent.ActionDial, uri);
+                StartActivity(intent);
+            };
+            */
+        }
     }
 }
 
