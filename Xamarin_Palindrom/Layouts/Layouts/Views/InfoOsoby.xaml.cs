@@ -21,7 +21,7 @@ namespace Layouts.Views
             telcislo.Text = osoba.ZiskejTelCislo;
             jmeno.Text=osoba.Jmeno;
             prijmeni.Text = osoba.Prijmeni;
-            Image.Source = "http://uppix.3dvf.com/images/tetescvfv.jpg";
+            Image.Source = "https://www.askmpa.com/wp-content/uploads/Donnie-head-shot-circle.jpg";
 
 
 

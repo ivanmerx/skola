@@ -23,7 +23,7 @@ namespace dracak
         public SuperStartpribeh()
         {
             InitializeComponent();
-            App.hrac.vybaveni = new Mec();
+
             textBlock.Text = App.hrac.vybaveni.hodnotaUtoku.ToString();
         }
     }

@@ -1,8 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Layouts.Views.InfoOsoby">
+             x:Class="Layouts.Views.InfoOsoby"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+  
   <StackLayout>
+    <controls:CircleImage Source="http://www.arthistoryarchive.com/arthistory/cubism/images/PabloPicasso-Weeping-Woman-with-Handkerchief-1937.jpg"
+      Aspect="AspectFill"
+      AbsoluteLayout.LayoutFlags="XProportional"
+      AbsoluteLayout.LayoutBounds="0.5,20,20,20">
+    </controls:CircleImage>
     <Image x:Name="Image" WidthRequest="100" HorizontalOptions="Center"></Image>
     <Label x:Name="jmeno" VerticalOptions="Center" HorizontalOptions="Center" />
     <Label x:Name="prijmeni" VerticalOptions="Center" HorizontalOptions="Center" />

@@ -29,7 +29,7 @@ namespace dracak
         {
 
             App.hrac.Jmeno = textBlock1.Text;
-            this.Content = new Pribeh();
+            this.Content = new VyberRasa();
         }
     }
 }

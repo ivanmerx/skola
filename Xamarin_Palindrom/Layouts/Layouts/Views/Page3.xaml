@@ -1,32 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Layouts.Views.Page3">
+             x:Class="Layouts.Views.Page3"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
   <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
   <ScrollView HorizontalOptions="Center" VerticalOptions="Center">
-    <StackLayout Spacing="15"  >
-
-
-      <!--
-            <ListView x:Name="list"></ListView>
-      <Entry TextChanged="ZmenaTextu"></Entry>
-      <Label x:Name ="Vysledek" HorizontalTextAlignment="Center"></Label>
-      <Label x:Name ="Vysledek3" HorizontalTextAlignment="Center"></Label>
-      !-->
-    </StackLayout>
     <StackLayout Spacing="15">
       <ListView x:Name="list2" ItemTapped="item">
         
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
-              <Grid HeightRequest="100">
+              <Grid HeightRequest="75">
                 <Grid.ColumnDefinitions>
                   <ColumnDefinition></ColumnDefinition>
                   <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Image x:Name="Image" Source="http://uppix.3dvf.com/images/tetescvfv.jpg"></Image>
+                <controls:CircleImage Source="http://www.arthistoryarchive.com/arthistory/cubism/images/PabloPicasso-Weeping-Woman-with-Handkerchief-1937.jpg"
+                      Aspect="AspectFill"
+                      AbsoluteLayout.LayoutFlags="XProportional"
+                      AbsoluteLayout.LayoutBounds="0.5,20,20,20">
+                </controls:CircleImage>
                 <StackLayout Grid.Column="1">
                   <Label Text="{Binding ZiskejJmeno}" FontAttributes="Bold" ></Label>
                   <Label Text="{Binding ZiskejVek}" FontAttributes="Bold" ></Label>

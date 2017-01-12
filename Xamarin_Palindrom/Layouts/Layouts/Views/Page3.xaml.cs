@@ -13,20 +13,11 @@ namespace Layouts.Views
         public Page3()
         {
             InitializeComponent();
-           //soba osoba = new Osoba();
-            /*
-            osoba.Jmeno = "Tomáš";
-            osoba.Prijmeni = "Klokočka";
-            osoba.Vek = 12;
-            osoba.TelCislo = 123456789;
-            */
             List<Osoba> ListMain = new List<Osoba>();
-            ListMain.Add(new Osoba("Tomáš", "Klokočka", 12, 123456789));
-            ListMain.Add(new Osoba("Libor", "Tomana", 50, 123456789));
-            ListMain.Add(new Osoba("Šimon", "Hladký", 9, 123456789));
-            ListMain.Add(new Osoba("Ivan", "Autosalon", 5, 123456789));
+            ListMain.Add(new Osoba("Jakub", "Březina", 68, 608450845));
+            ListMain.Add(new Osoba("David", "Šourek", 15, 123456789));
+            ListMain.Add(new Osoba("Standa", "Hulín", 69, 123456789));
 
-            //list.ItemsSource = ListMain;
             list2.ItemsSource = ListMain;
 
         }
@@ -34,34 +25,5 @@ namespace Layouts.Views
         {
             Navigation.PushAsync(new InfoOsoby(e.Item as Osoba));
         }
-        /*
-        private void ZmenaTextu(object sender, TextChangedEventArgs e)
-        {
-            Vysledek.Text = " ";
-            Vysledek3.Text = " ";
-            string Hodnota = e.NewTextValue.ToLower();
-            int Pocitani = Hodnota.Length;
-            string Opacne = "";
-
-            if (Pocitani > 0)
-            {
-                for (int i = Hodnota.Length; i > 0; i--)
-                {
-                    Opacne += Hodnota[i - 1].ToString();
-                }
-
-                if (Hodnota == Opacne)
-                {
-                    Vysledek.Text = Hodnota;
-                    Vysledek3.Text = "Ano jedná se o palindrom";
-                }
-                else
-                {
-                    Vysledek.Text = Hodnota;
-                    Vysledek3.Text = "Nejedná se o palindrom";
-                }
-            }
-        }
-        */
     }
 }
