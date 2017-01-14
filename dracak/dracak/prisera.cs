@@ -6,45 +6,44 @@ using System.Threading.Tasks;
 
 namespace dracak
 {
-    public class postava
+    class prisera
     {
-        private string jmeno;
-        private string rasa;
-        private int zivoty = 100;
-        IVybaveni interfaceVybaveni;
-        public IVybaveni vybaveni
+        private string nazev;
+        private int hodnotaUtoku;
+        private int zivoty;
+        ITypPrisery interfacetypprisery;
+
+        public ITypPrisery typprisery
         {
             get
             {
-                return interfaceVybaveni;
+                return interfacetypprisery;
             }
             set
             {
-                interfaceVybaveni = value;
+                interfacetypprisery = value;
             }
         }
-        public string Jmeno
+        public string Nazev
         {
             get
             {
-                return jmeno;
+                return nazev;
             }
-
             set
             {
-                jmeno = value;
+                nazev = value;
             }
         }
-        public string Rasa
+        public int HodnotaUtoku
         {
             get
             {
-                return rasa;
+                return hodnotaUtoku;
             }
-
             set
             {
-                rasa = value;
+                hodnotaUtoku = value;
             }
         }
         public int Zivoty

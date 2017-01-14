@@ -10,7 +10,10 @@
       Title="SuperStartpribeh">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" Text="Vypravěč: Vítej bojovníku nacházíš se na bojišti před závěrečnou bitvou před branami Mordoru, máš za úkol dostat se za Frodem a pomoci mu zničit prsten" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,45,10,0" Height="70" Width="280"/>
+        <TextBlock x:Name="textBlock2" Text="Vypravěč: Vidíš před sebou skřeta jak chce zaútočit na vojáka rozhodneš se mu pomoci nebo jdeš za svým úkolem zničit prsten" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center"  Height="59" Width="280" Margin="10,128,10,113"/>
+        <Button x:Name="button" Content="Pomoci" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Width="81" Click="button_Click" Margin="10,0,0,60"/>
+        <Button x:Name="button1" Content="Jít dál" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Margin="0,0,10,60"/>
 
     </Grid>
 </Page>

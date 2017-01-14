@@ -3,7 +3,7 @@
   <Class Name="dracak.Hul">
     <Position X="10.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAE=</HashCode>
       <FileName>Hul.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -11,7 +11,7 @@
   <Class Name="dracak.Mec">
     <Position X="8" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAE=</HashCode>
       <FileName>Mec.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -19,8 +19,24 @@
   <Class Name="dracak.Sekyra">
     <Position X="5.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAE=</HashCode>
       <FileName>Sekyra.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="dracak.Pozemni">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAQAAAAEAAAAAEAAAABAAE=</HashCode>
+      <FileName>Pozemni.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="dracak.Vzdusny">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAQAAAAEAAAAAEAAAABAAE=</HashCode>
+      <FileName>Vzdusny.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -29,6 +45,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAE=</HashCode>
       <FileName>IVybaveni.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="dracak.ITypPrisery">
+    <Position X="14.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAABAAE=</HashCode>
+      <FileName>ITypPrisery.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

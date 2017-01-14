@@ -24,7 +24,12 @@ namespace dracak
         {
             InitializeComponent();
 
-            textBlock.Text = App.hrac.vybaveni.hodnotaUtoku.ToString();
+            //textBlock.Text = App.hrac.vybaveni.hodnotaUtoku.ToString();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.MainWindow.Content = new Pomoci();
         }
     }
 }
