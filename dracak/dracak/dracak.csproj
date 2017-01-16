@@ -63,12 +63,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DruhyBoj.xaml.cs">
+      <DependentUpon>DruhyBoj.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Hul.cs" />
     <Compile Include="ITypPrisery.cs" />
     <Compile Include="IVybaveni.cs" />
     <Compile Include="Mec.cs" />
+    <Compile Include="PoDruhymBoji.xaml.cs">
+      <DependentUpon>PoDruhymBoji.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pomoci.xaml.cs">
       <DependentUpon>Pomoci.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PoPrvnimBoji.xaml.cs">
+      <DependentUpon>PoPrvnimBoji.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pozemni.cs" />
     <Compile Include="prisera.cs" />
@@ -80,6 +89,10 @@
       <DependentUpon>SuperStartpribeh.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vzdusny.cs" />
+    <Page Include="DruhyBoj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -92,7 +105,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PoDruhymBoji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pomoci.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PoPrvnimBoji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -8,8 +8,8 @@ namespace dracak
 {
     class Vzdusny : ITypPrisery
     {
-        private int HodnotaUtoku = 30;
-        private string Nazev = "Skřet";
+        private int HodnotaUtoku = 32;
+        private string Nazev = "Drak Nazgûla";
         private int Zivoty = 60;
 
         public int hodnotaUtoku

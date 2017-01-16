@@ -9,7 +9,7 @@ namespace dracak
     class Sekyra : IVybaveni
     {
         private string Nazev = "Sekyra";
-        private int HodnotaUtoku = 5;
+        private int HodnotaUtoku = 50;
         public int hodnotaUtoku
         {
             get

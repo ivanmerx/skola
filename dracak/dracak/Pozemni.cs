@@ -8,7 +8,7 @@ namespace dracak
 {
     class Pozemni : ITypPrisery
     {
-        private int HodnotaUtoku = 40;
+        private int HodnotaUtoku = 30;
         private string Nazev = "Nazgûl";
         private int Zivoty = 100;
 

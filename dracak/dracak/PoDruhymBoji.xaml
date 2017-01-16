@@ -1,0 +1,18 @@
+﻿<Page x:Class="dracak.PoDruhymBoji"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:dracak"
+      mc:Ignorable="d" 
+      Background="White"
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="PoDruhymBoji">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="10,66,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Height="97"><Run Text="Vypravěč: Výborně porazil jsi draka"/><Run Text=" "/><Run Text="Nazgûl"/><Run Text="a, nyní běžíš za Frodem do Hory Osudu."/><LineBreak/><Run/><LineBreak/><Run Text="Vypravěč: V"/><Run Text="i"/><Run Text="díš jak se Frodo snaží hodit prsten do lávy,ale síla prstenu je až moc velká, jak se nyní rozhodneš"/><Run Text="."/></TextBlock>
+        <Button x:Name="button" Content="Zničit prsten" HorizontalAlignment="Left" Margin="10,0,0,30" VerticalAlignment="Bottom" Width="120"/>
+        <Button x:Name="button1" Content="Vzít si prsten" HorizontalAlignment="Right" Margin="0,0,10,30" VerticalAlignment="Bottom" Width="120"/>
+
+    </Grid>
+</Page>
