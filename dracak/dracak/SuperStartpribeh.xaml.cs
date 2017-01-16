@@ -31,5 +31,10 @@ namespace dracak
         {
             App.Current.MainWindow.Content = new Pomoci();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.MainWindow.Content = new JitDal();
+        }
     }
 }

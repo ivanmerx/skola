@@ -16,23 +16,18 @@ using System.Windows.Shapes;
 namespace dracak
 {
     /// <summary>
-    /// Interaction logic for PoDruhymBoji.xaml
+    /// Interaction logic for ZnicitPrsten.xaml
     /// </summary>
-    public partial class PoDruhymBoji : Page
+    public partial class ZnicitPrsten : Page
     {
-        public PoDruhymBoji()
+        public ZnicitPrsten()
         {
             InitializeComponent();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            App.Current.MainWindow.Content = new ZnicitPrsten();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            App.Current.MainWindow.Content = new NechatSiPrsten();
+            Application.Current.Shutdown();
         }
     }
 }

@@ -69,7 +69,13 @@
     <Compile Include="Hul.cs" />
     <Compile Include="ITypPrisery.cs" />
     <Compile Include="IVybaveni.cs" />
+    <Compile Include="JitDal.xaml.cs">
+      <DependentUpon>JitDal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mec.cs" />
+    <Compile Include="NechatSiPrsten.xaml.cs">
+      <DependentUpon>NechatSiPrsten.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PoDruhymBoji.xaml.cs">
       <DependentUpon>PoDruhymBoji.xaml</DependentUpon>
     </Compile>
@@ -89,7 +95,14 @@
       <DependentUpon>SuperStartpribeh.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vzdusny.cs" />
+    <Compile Include="ZnicitPrsten.xaml.cs">
+      <DependentUpon>ZnicitPrsten.xaml</DependentUpon>
+    </Compile>
     <Page Include="DruhyBoj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JitDal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,6 +118,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NechatSiPrsten.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PoDruhymBoji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -126,6 +143,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SuperStartpribeh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ZnicitPrsten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
