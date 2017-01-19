@@ -23,6 +23,8 @@ namespace dracak
         public MainWindow()
         {
             InitializeComponent();
+            //dodělat příběh, aby to bylo delší a potom tam udělat lepší systém souboje a možná i lepší grafiku http://www.1001fonts.com/morris-roman-font.html#license
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"http://wallpapercave.com/wp/U6eyopM.jpg")));
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -30,6 +32,7 @@ namespace dracak
 
             App.hrac.Jmeno = textBlock1.Text;
             this.Content = new VyberRasa();
+
         }
     }
 }

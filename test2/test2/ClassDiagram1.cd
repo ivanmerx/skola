@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="test2.BankAccount">
-    <Position X="1.75" Y="1.75" Width="2.25" />
+    <Position X="2.75" Y="1.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAACBA=</HashCode>
       <FileName>BankAccount.cs</FileName>

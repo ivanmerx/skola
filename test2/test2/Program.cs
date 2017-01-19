@@ -11,7 +11,7 @@ namespace test2
         static void Main(string[] args)
         {
             BankAccount bankacc = new BankAccount();
-            bankacc.AccountBallance = 10000;
+            bankacc.AccountBallance = 100000;
             bankacc.ExchangeStrategy = new CzkToDollarExchangeStrategy();
             Console.WriteLine(bankacc.Convert());
             bankacc.ExchangeStrategy = new CzkToEuroExchangeStrategy();
