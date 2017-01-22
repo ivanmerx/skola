@@ -6,14 +6,16 @@
       xmlns:local="clr-namespace:dracak"
       mc:Ignorable="d" 
       Background="White"
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="500" d:DesignWidth="815"
       Title="Startpribeh">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="101,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Mec" HorizontalAlignment="Left" Margin="44,90,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button2" Content="Sekera" HorizontalAlignment="Left" Margin="44,127,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button3" Content="Hul" HorizontalAlignment="Left" Margin="44,164,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-
+        <TextBlock FontSize="30" TextAlignment="Center" x:Name="textBlock" HorizontalAlignment="Center" Margin="0,30,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Button x:Name="button2" Content="Sekera" HorizontalAlignment="Right" Margin="0,185,125,0" VerticalAlignment="Center" Width="74" Click="button_Click"/>
+        <Button x:Name="button3" Content="Hul" HorizontalAlignment="Left" Margin="125,185,0,0" VerticalAlignment="Center" Width="75" Click="button_Click"/>
+        <Button x:Name="button" Content="Mec" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="74" Click="button_Click" Margin="0,185,0,0" />
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100" Source="http://vignette3.wikia.nocookie.net/tesfanon/images/7/75/Snow_staff.jpg/revision/latest?cb=20130915124312" Margin="105,0,0,0" VerticalAlignment="Center" Width="100"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Source="http://vignette2.wikia.nocookie.net/lotr/images/8/88/2257-Aragorn-Costume-Sword-large.jpg/revision/latest?cb=20150418090815" VerticalAlignment="Center" Width="100" Margin="380,0,0,0"/>
+        <Image x:Name="image2" HorizontalAlignment="Right" Height="100" Source="https://s-media-cache-ak0.pinimg.com/originals/f7/7a/47/f77a47cf8c428db7a47385130626f243.jpg" Margin="0,0,105,0" VerticalAlignment="Center" Width="100"/>
     </Grid>
 </Page>

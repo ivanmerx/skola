@@ -23,7 +23,8 @@ namespace dracak
         public VyberRasa()
         {
             InitializeComponent();
-            TextBlock2.Text = "Vítej válečníku " + App.hrac.Jmeno + "\nVyber si rasu";
+            TextBlock2.Text = "Vítej válečníku: " + App.hrac.Jmeno + "\nVyber si rasu";
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"https://s-media-cache-ak0.pinimg.com/originals/32/47/52/32475254b971f97e4c807265f8e5d4b6.jpg")));
         }
 
         private void checkBox_Checked(object sender, RoutedEventArgs e)

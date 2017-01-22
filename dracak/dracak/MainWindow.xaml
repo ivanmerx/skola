@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dracak"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525"
+        
+        Title="MainWindow" Height="500" Width="815"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
      TextElement.FontWeight="Regular"
@@ -14,6 +15,7 @@
      TextOptions.TextRenderingMode="Auto"
      Background="{DynamicResource MaterialDesignPaper}"
      FontFamily="{DynamicResource MaterialDesignFont}">
+    
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -23,8 +25,8 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
 
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="140" Width="348" TextAlignment="Center" Grid.Row="0" FontFamily="Segoe WP Black" FontSize="36" Margin="88,10,81,0"><Run Text="Pán prstenů bitva o Středozem"/></TextBlock>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="140" Width="348" TextAlignment="Center" Grid.Row="0"  FontSize="36" Margin="88,10,81,0"><Run Text="Pán prstenů bitva o Středozem"/></TextBlock>
         <Button x:Name="button" Content="Hrát&#xD;&#xA;" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="75" Height="24" Grid.Column="0" Grid.Row="1" Click="button_Click"/>
-        <TextBox x:Name="textBlock1" HorizontalAlignment="Left" Margin="187,25,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Zadej své jméno válečníku" VerticalAlignment="Top" Width="162"/>
+        <TextBox x:Name="textBlock1" HorizontalAlignment="Center" Margin="0" Grid.Row="1" TextWrapping="Wrap" Text="Zadej své jméno válečníku" VerticalAlignment="Top" Width="162"/>
     </Grid>
 </Window>
