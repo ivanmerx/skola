@@ -26,5 +26,15 @@ namespace dracak.Morie
             this.Background = new ImageBrush(new BitmapImage(new Uri(@"http://orig02.deviantart.net/c883/f/2014/308/c/3/mines_of_moria___lord_of_the_rings_tcg_by_jcbarquet-d859fti.jpg")));
             //
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.MainWindow.Content = new Morie2_1();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.MainWindow.Content = new Morie2_2();
+        }
     }
 }
