@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using dracak.Morie;
 
 namespace dracak
 {
@@ -41,7 +42,7 @@ namespace dracak
             {
                 App.hrac.vybaveni = new Hul();
             }
-            App.Current.MainWindow.Content = new SuperStartpribeh();
+            App.Current.MainWindow.Content = new Morie1();
         }
     }
 }

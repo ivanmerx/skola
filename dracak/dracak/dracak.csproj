@@ -73,6 +73,9 @@
       <DependentUpon>JitDal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Mec.cs" />
+    <Compile Include="Morie\Morie1.xaml.cs">
+      <DependentUpon>Morie1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NechatSiPrsten.xaml.cs">
       <DependentUpon>NechatSiPrsten.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Morie\Morie1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NechatSiPrsten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
