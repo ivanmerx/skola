@@ -73,6 +73,11 @@
     <Compile Include="JitDal.xaml.cs">
       <DependentUpon>JitDal.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Kouzla\Carodej.cs" />
+    <Compile Include="Kouzla\Clovek.cs" />
+    <Compile Include="Kouzla\Elf.cs" />
+    <Compile Include="Kouzla\Hobit.cs" />
+    <Compile Include="Kouzla\Trpaslik.cs" />
     <Compile Include="Mec.cs" />
     <Compile Include="Morie\Morie1.xaml.cs">
       <DependentUpon>Morie1.xaml</DependentUpon>
@@ -82,6 +87,27 @@
     </Compile>
     <Compile Include="Morie\Morie2_2.xaml.cs">
       <DependentUpon>Morie2_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie3.xaml.cs">
+      <DependentUpon>Morie3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie4.xaml.cs">
+      <DependentUpon>Morie4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie4_1.xaml.cs">
+      <DependentUpon>Morie4_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie4_2.xaml.cs">
+      <DependentUpon>Morie4_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie5.xaml.cs">
+      <DependentUpon>Morie5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie_Boj1.xaml.cs">
+      <DependentUpon>Morie_Boj1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie_Boj2.xaml.cs">
+      <DependentUpon>Morie_Boj2.xaml</DependentUpon>
     </Compile>
     <Compile Include="NechatSiPrsten.xaml.cs">
       <DependentUpon>NechatSiPrsten.xaml</DependentUpon>
@@ -137,6 +163,34 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Morie\Morie2_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie4_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie4_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie_Boj1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie_Boj2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -209,9 +263,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="postavy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

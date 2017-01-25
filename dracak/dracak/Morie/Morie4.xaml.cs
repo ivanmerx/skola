@@ -16,19 +16,23 @@ using System.Windows.Shapes;
 namespace dracak.Morie
 {
     /// <summary>
-    /// Interaction logic for Morie2_1.xaml
+    /// Interaction logic for Morie4.xaml
     /// </summary>
-    public partial class Morie2_1 : Page
+    public partial class Morie4 : Page
     {
-        public Morie2_1()
+        public Morie4()
         {
             InitializeComponent();
-            this.Background = new ImageBrush(new BitmapImage(new Uri(@"http://vignette1.wikia.nocookie.net/lotr/images/2/2e/Durin's_door.png/revision/latest?cb=20140113142736")));
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            App.Current.MainWindow.Content = new Morie_Boj1();
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
