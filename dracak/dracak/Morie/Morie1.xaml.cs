@@ -35,7 +35,7 @@ namespace dracak.Morie
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-          //  App.Current.MainWindow.Content = new Morie2_2();
+            App.Current.MainWindow.Content = new Morie_Boj1();
         }
     }
 }

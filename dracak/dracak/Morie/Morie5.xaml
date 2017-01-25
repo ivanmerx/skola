@@ -11,7 +11,7 @@
     <Grid>
         <TextBlock FontWeight="Bold" TextAlignment="Left" x:Name="textBlock" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="279" Height="166"><Run Text="Vypraveč"/><Run Text=": "/><Run Text="Výborně podařilo se ti porazit tuto nestvůru a tím jsi dokončil Epizodu 1 a nyní se můžeš vrhnout do druhé epizody kde se dostaneš do další z částí Pána Prstenů."/></TextBlock>
         <TextBlock FontWeight="Bold" FontSize="20"  TextAlignment="Center" x:Name="textBlock1" HorizontalAlignment="Center" Margin="323,90,335,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="59" Width="157"><Run Text="Epizoda 1"/><LineBreak/><Run Text="Morie"/></TextBlock>
-        <Image Source="http://www.myfreetextures.com/wp-content/uploads/2011/06/grungy-rough-old-worn-parchment-paper.jpg" x:Name="image" HorizontalAlignment="Center" Height="412" Margin="0" VerticalAlignment="Center" Width="340" Panel.ZIndex="-1"/>
+        <Image x:Name="image" HorizontalAlignment="Center" Height="412" Margin="0" VerticalAlignment="Center" Width="340" Panel.ZIndex="-1"/>
         <Button x:Name="button" Content="Pokračovat" HorizontalAlignment="Center" VerticalAlignment="Top" Width="110" Margin="0,390,0,0" Click="button_Click"/>
     </Grid>
 </Page>

@@ -25,11 +25,11 @@
         <TextBlock x:Name="textBlock2" TextAlignment="Center" Grid.Column="1" HorizontalAlignment="Center" Height="86" Margin="18,43,18,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Grid.RowSpan="2"><Run Text="TextBlock"/></TextBlock>
         <Button x:Name="button" Content="Zaútoč" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Width="85" Click="button_Click" Margin="20,67,0,67" />
         <Button x:Name="button2" Content="Obrana" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="84" Margin="0,67" Click="button2_Click" />
-        <Button x:Name="button3" Content="Zaútoč" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center" Width="133" Click="button_Click" Margin="0,67,389,67" Grid.ColumnSpan="2" />
+        <Button x:Name="button3" Content="Zaútoč" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center" Width="133" Margin="0,67,389,67" Grid.ColumnSpan="2" Click="button3_Click" />
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
         <TextBlock x:Name="textBlock3" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center"/>
         <Image x:Name="image" Height="100" Margin="0,0,0,123" VerticalAlignment="Bottom" Width="100" Grid.RowSpan="2" HorizontalAlignment="Center"/>
         <Image x:Name="image1" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="146,0,0,123" VerticalAlignment="Bottom" Width="100" Grid.RowSpan="2"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="10,141,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="10,123,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
     </Grid>
 </Page>

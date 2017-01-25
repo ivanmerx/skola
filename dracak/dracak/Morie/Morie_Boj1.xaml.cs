@@ -93,5 +93,19 @@ namespace dracak.Morie
             ProgressBar.Value += Prisera.typprisery.hodnotaUtoku;
             textBlock1.Text = (Prisera.typprisery.hodnotaUtoku + App.hrac.vybaveni.hodnotaUtoku).ToString();
         }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            App.hrac.vybaveni.hodnotaUtoku += App.hrac.kouzlo.hodnotaUtoku;
+            textBlock1.Text = (Int32.Parse(textBlock1.Text) + App.hrac.kouzlo.plusZivoty).ToString();
+            ProgressBar.Value += App.hrac.kouzlo.plusZivoty; 
+            button3.IsEnabled = false;
+            textBlock4.Text = "Hodnota útoku " + App.hrac.vybaveni.hodnotaUtoku;
+            if(Int32.Parse(textBlock1.Text) >= 100)
+            {
+                ProgressBar.Value = 100;
+                textBlock1.Text = 100.ToString();
+            }
+        }
     }
 }

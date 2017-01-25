@@ -29,7 +29,7 @@ namespace dracak.Morie
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            App.Current.MainWindow.Content = new Morie4();
         }
     }
 }
