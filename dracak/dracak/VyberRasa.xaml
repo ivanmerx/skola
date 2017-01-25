@@ -19,11 +19,11 @@
         <Button x:Name="button3" Content="Čaroděj" HorizontalAlignment="Left" Margin="679,0,0,119" VerticalAlignment="Bottom" Width="85" Click="button_Click"/>
         <Button x:Name="button4" Content="Člověk" HorizontalAlignment="Left" Margin="519,0,0,119" VerticalAlignment="Bottom" Width="85" Click="button_Click"/>
 
-        <Image x:Name="image" Source="http://cdn.pcwallart.com/images/lord-of-the-rings-legolas-bow-wallpaper-1.jpg" HorizontalAlignment="Left" Height="169" VerticalAlignment="Top" Width="160" Margin="10,190,0,0"/>
-        <Image x:Name="image2" Source="http://vignette3.wikia.nocookie.net/lotr/images/0/09/Aragorn_3.jpg/revision/latest?cb=20100617184918" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="81" Margin="523,190,0,0"/>
-        <Image x:Name="image3" Source="http://vignette1.wikia.nocookie.net/lotr/images/e/ec/Gimli_-_FOTR.png/revision/latest?cb=20121008105956" HorizontalAlignment="Left" Height="169" VerticalAlignment="Top" Width="160" Margin="321,190,0,0"/>
-        <Image x:Name="image4" Source="https://s-media-cache-ak0.pinimg.com/736x/2f/e2/47/2fe24755390fa510b0d929e1220f8015.jpg" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="130" Margin="203,190,0,0"/>
-        <Image x:Name="image5" Source="http://vignette3.wikia.nocookie.net/warner-bros-characters/images/2/2f/Gandalf_3.jpg/revision/latest?cb=20130613083310" HorizontalAlignment="Right" Height="137" VerticalAlignment="Top" Width="160" Margin="0,190,10,0"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="169" VerticalAlignment="Top" Width="160" Margin="10,190,0,0"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="81" Margin="523,190,0,0"/>
+        <Image x:Name="image3" HorizontalAlignment="Left" Height="169" VerticalAlignment="Top" Width="160" Margin="321,190,0,0"/>
+        <Image x:Name="image4" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="130" Margin="203,190,0,0"/>
+        <Image x:Name="image5" HorizontalAlignment="Right" Height="137" VerticalAlignment="Top" Width="160" Margin="0,190,10,0"/>
         <!--<CheckBox x:Name="checkBox" Content="Hobit" HorizontalAlignment="Left" Margin="23,180,0,0" VerticalAlignment="Top" Checked="checkBox_Checked"/>
         <CheckBox x:Name="checkBox1" Content="Elf" HorizontalAlignment="Left" Margin="23,200,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="checkBox2" Content="Člověk" HorizontalAlignment="Left" Margin="23,220,0,0" VerticalAlignment="Top"/>

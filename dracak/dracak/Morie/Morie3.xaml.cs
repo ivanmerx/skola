@@ -23,6 +23,8 @@ namespace dracak.Morie
         public Morie3()
         {
             InitializeComponent();
+            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/papir.jpg"));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/moriemain.jpg")));
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

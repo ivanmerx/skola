@@ -24,7 +24,13 @@ namespace dracak
         {
             InitializeComponent();
             TextBlock2.Text = "Vítej válečníku: " + App.hrac.Jmeno + "\nVyber si rasu";
-            this.Background = new ImageBrush(new BitmapImage(new Uri(@"https://s-media-cache-ak0.pinimg.com/originals/32/47/52/32475254b971f97e4c807265f8e5d4b6.jpg")));
+            //this.Background = new ImageBrush(new BitmapImage(new Uri(@"https://s-media-cache-ak0.pinimg.com/originals/32/47/52/32475254b971f97e4c807265f8e5d4b6.jpg")));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/vyberrasa.jpg")));
+            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/elf.jpg"));
+            image4.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/hobit.jpg"));
+            image3.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/trpaslik.png"));
+            image2.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/clovek.jpg"));
+            image5.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/carodej.jpg"));
         }
 
         private void checkBox_Checked(object sender, RoutedEventArgs e)

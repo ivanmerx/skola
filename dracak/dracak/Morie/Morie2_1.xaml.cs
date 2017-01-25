@@ -23,7 +23,9 @@ namespace dracak.Morie
         public Morie2_1()
         {
             InitializeComponent();
-            this.Background = new ImageBrush(new BitmapImage(new Uri(@"http://vignette1.wikia.nocookie.net/lotr/images/2/2e/Durin's_door.png/revision/latest?cb=20140113142736")));
+            //this.Background = new ImageBrush(new BitmapImage(new Uri(@"http://vignette1.wikia.nocookie.net/lotr/images/2/2e/Durin's_door.png/revision/latest?cb=20140113142736")));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/moriesecond.png")));
+            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/papir.jpg"));
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

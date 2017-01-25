@@ -23,7 +23,8 @@ namespace dracak.Morie
         public Morie1()
         {
             InitializeComponent();
-            this.Background = new ImageBrush(new BitmapImage(new Uri(@"http://orig02.deviantart.net/c883/f/2014/308/c/3/mines_of_moria___lord_of_the_rings_tcg_by_jcbarquet-d859fti.jpg")));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/moriemain.jpg")));
+            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/papir.jpg"));
             //
         }
 

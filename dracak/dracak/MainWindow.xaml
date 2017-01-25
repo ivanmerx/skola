@@ -13,7 +13,7 @@
      TextElement.FontSize="13"
      TextOptions.TextFormattingMode="Ideal"
      TextOptions.TextRenderingMode="Auto"
-     Background="{DynamicResource MaterialDesignPaper}"
+
      FontFamily="{DynamicResource MaterialDesignFont}">
     
     <Grid x:Name="MainGrid">

@@ -256,7 +256,11 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Obrazky\hul.jpg" />
+    <Resource Include="Obrazky\mec.jpg" />
+    <Resource Include="Obrazky\sekera.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Obrazky\carodej.jpg" />
     <Resource Include="Obrazky\clovek.jpg" />
@@ -267,6 +271,12 @@
     <Resource Include="Obrazky\moriesecond.png" />
     <Resource Include="Obrazky\trpaslik.png" />
     <Resource Include="Obrazky\vyberrasa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\papir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\skret.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
