@@ -12,6 +12,7 @@ namespace dracak
         private string rasa;
         private int zivoty = 100;
         IVybaveni interfaceVybaveni;
+        IKouzlo interfaceKouzlo;
         public IVybaveni vybaveni
         {
             get
@@ -21,6 +22,17 @@ namespace dracak
             set
             {
                 interfaceVybaveni = value;
+            }
+        }
+        public IKouzlo kouzlo
+        {
+            get
+            {
+                return interfaceKouzlo;
+            }
+            set
+            {
+                interfaceKouzlo = value;
             }
         }
         public string Jmeno

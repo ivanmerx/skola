@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using dracak.Kouzla;
 namespace dracak
 {
-    interface IKouzlo
+    public interface IKouzlo
     {
         int hodnotaUtoku { get; set; }
         string nazev { get; set; }

@@ -85,9 +85,6 @@
     <Compile Include="Morie\Morie2_1.xaml.cs">
       <DependentUpon>Morie2_1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Morie\Morie2_2.xaml.cs">
-      <DependentUpon>Morie2_2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Morie\Morie3.xaml.cs">
       <DependentUpon>Morie3.xaml</DependentUpon>
     </Compile>
@@ -159,10 +156,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Morie\Morie2_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie2_2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

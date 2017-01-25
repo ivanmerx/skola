@@ -23,6 +23,29 @@ namespace dracak.Morie
         public Morie_Boj1()
         {
             InitializeComponent();
+            if(App.hrac.Rasa == "Člověk") {
+                button3.Content = App.hrac.Rasa;
+            }else if(App.hrac.Rasa == "Trpaslík"){
+
+            }else if(App.hrac.Rasa == "Elf"){
+
+            }else if(App.hrac.Rasa == "Čaroděj")
+            {
+
+            }else if(App.hrac.Rasa == "Hobit")
+            {
+
+            }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
         }
     }
 }
