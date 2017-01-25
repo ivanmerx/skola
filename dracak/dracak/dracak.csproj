@@ -257,6 +257,17 @@
     </None>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Obrazky\carodej.jpg" />
+    <Resource Include="Obrazky\clovek.jpg" />
+    <Resource Include="Obrazky\elf.jpg" />
+    <Resource Include="Obrazky\hobit.jpg" />
+    <Resource Include="Obrazky\mainwindow.jpg" />
+    <Resource Include="Obrazky\moriemain.jpg" />
+    <Resource Include="Obrazky\moriesecond.png" />
+    <Resource Include="Obrazky\trpaslik.png" />
+    <Resource Include="Obrazky\vyberrasa.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

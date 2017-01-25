@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using dracak.Kouzla;
 
 namespace dracak.Morie
 {
@@ -23,18 +24,32 @@ namespace dracak.Morie
         public Morie_Boj1()
         {
             InitializeComponent();
-            if(App.hrac.Rasa == "Člověk") {
-                button3.Content = App.hrac.Rasa;
+            prisera Prisera = new prisera("Goblin",new Pozemni());
+            textBlock2.Text = Prisera.Nazev;
+            textBlock.Text = App.hrac.Jmeno;
+            textBlock1.Text = App.hrac.Zivoty.ToString();
+            textBlock3.Text = Prisera.typprisery.zivoty.ToString();
+
+            if (App.hrac.Rasa == "Člověk") {
+                App.hrac.kouzlo = new Clovek();
+                button3.Content = App.hrac.kouzlo.nazev;
             }else if(App.hrac.Rasa == "Trpaslík"){
-
-            }else if(App.hrac.Rasa == "Elf"){
-
-            }else if(App.hrac.Rasa == "Čaroděj")
+                App.hrac.kouzlo = new Trpaslik();
+                button3.Content = App.hrac.kouzlo.nazev;
+            }
+            else if(App.hrac.Rasa == "Elf"){
+                App.hrac.kouzlo = new Elf();
+                button3.Content = App.hrac.kouzlo.nazev;
+            }
+            else if(App.hrac.Rasa == "Čaroděj")
             {
-
-            }else if(App.hrac.Rasa == "Hobit")
+                App.hrac.kouzlo = new Carodej();
+                button3.Content = App.hrac.kouzlo.nazev;
+            }
+            else if(App.hrac.Rasa == "Hobit")
             {
-
+                App.hrac.kouzlo = new Hobit();
+                button3.Content = App.hrac.kouzlo.nazev;
             }
         }
 

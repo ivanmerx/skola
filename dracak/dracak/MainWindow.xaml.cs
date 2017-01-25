@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 namespace dracak
 {
     /// <summary>
@@ -24,7 +23,9 @@ namespace dracak
         {
             InitializeComponent();
             //dodělat příběh, aby to bylo delší a potom tam udělat lepší systém souboje a možná i lepší grafiku http://www.1001fonts.com/morris-roman-font.html#license
-            this.Background = new ImageBrush(new BitmapImage(new Uri(@"http://wallpapercave.com/wp/U6eyopM.jpg")));
+            //this.Background = new ImageBrush(new BitmapImage(new Uri(@"Obrazky/mainwindow.jpg")));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/myapp;component/Obrazky/mainwindow.jpg")));
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

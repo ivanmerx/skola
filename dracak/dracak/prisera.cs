@@ -57,5 +57,10 @@ namespace dracak
                 zivoty = value;
             }
         }
+        public prisera(string nazev, ITypPrisery typprisery)
+        {
+            this.nazev = nazev;
+            this.typprisery = typprisery;
+        }
     }
 }

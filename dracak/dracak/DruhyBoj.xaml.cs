@@ -20,7 +20,7 @@ namespace dracak
     /// </summary>
     public partial class DruhyBoj : Page
     {
-        prisera prisera = new prisera();
+        prisera prisera = new prisera(" ", new Pozemni());
         public DruhyBoj()
         {
             InitializeComponent();
