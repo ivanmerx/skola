@@ -78,8 +78,17 @@ namespace dracak.Morie
             }
             else
             {
-                ProgressBar2.Value -= App.hrac.vybaveni.hodnotaUtoku;
-                textBlock3.Text = (Int32.Parse(textBlock3.Text) - App.hrac.vybaveni.hodnotaUtoku).ToString();
+                Random kostka = new Random();
+                int random = kostka.Next(1, 100);
+                if(random % 2 == 0)
+                {
+                    ProgressBar2.Value -= App.hrac.vybaveni.hodnotaUtoku;
+                    textBlock3.Text = (Int32.Parse(textBlock3.Text) - (App.hrac.vybaveni.hodnotaUtoku+App.hrac.vybaveni.hodnotaUtoku/100*110)).ToString();
+                }else
+                {
+                    ProgressBar2.Value -= App.hrac.vybaveni.hodnotaUtoku;
+                    textBlock3.Text = (Int32.Parse(textBlock3.Text) - App.hrac.vybaveni.hodnotaUtoku).ToString();
+                }
             }
         }
 
