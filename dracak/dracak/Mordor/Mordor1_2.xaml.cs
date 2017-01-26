@@ -13,23 +13,26 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace dracak.Morie
+namespace dracak.Mordor
 {
     /// <summary>
-    /// Interaction logic for Morie5.xaml
+    /// Interakční logika pro Mordor1_2.xaml
     /// </summary>
-    public partial class Morie5 : Page
+    public partial class Mordor1_2 : Page
     {
-        public Morie5()
+        public Mordor1_2()
         {
             InitializeComponent();
-            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/moriemain.jpg")));
-            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/papir.jpg"));
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            App.Current.MainWindow.Content = new Mordor.Mordor1();
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

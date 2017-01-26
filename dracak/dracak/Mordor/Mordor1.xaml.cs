@@ -13,28 +13,27 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace dracak
+namespace dracak.Mordor
 {
     /// <summary>
-    /// Interaction logic for SuperStartpribeh.xaml
+    /// Interakční logika pro Mordor1.xaml
     /// </summary>
-    public partial class SuperStartpribeh : Page
+    public partial class Mordor1 : Page
     {
-        public SuperStartpribeh()
+        public Mordor1()
         {
             InitializeComponent();
-
-            //textBlock.Text = App.hrac.vybaveni.hodnotaUtoku.ToString();
+            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/papir.jpg"));
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            App.Current.MainWindow.Content = new Pomoci();
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            App.Current.MainWindow.Content = new JitDal();
+
         }
     }
 }

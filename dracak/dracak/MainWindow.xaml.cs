@@ -24,6 +24,7 @@ namespace dracak
             InitializeComponent();
             //dodělat příběh, aby to bylo delší a potom tam udělat lepší systém souboje a možná i lepší grafiku http://www.1001fonts.com/morris-roman-font.html#license
             //this.Background = new ImageBrush(new BitmapImage(new Uri(@"Obrazky/mainwindow.jpg")));
+            //Pres konstruktor udelat priseru + pres konstruktor udělat page kde ten konstruktor muze byt hodne velky, budou 3 druhy pages, a potom třeba i values u tech buttonu |arena|
             this.Background =new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/mainwindow.jpg")));
 
         }

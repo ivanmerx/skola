@@ -65,7 +65,7 @@ namespace dracak.Morie
         {
             if (ProgressBar.Value <= 0)
             {
-                App.Current.MainWindow.Content = new SuperStartpribeh();
+                App.Current.MainWindow.Content = new MainWindow();
             }
             else
             {

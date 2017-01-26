@@ -63,14 +63,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DruhyBoj.xaml.cs">
+    <Compile Include="Mordor\DruhyBoj.xaml.cs">
       <DependentUpon>DruhyBoj.xaml</DependentUpon>
     </Compile>
     <Compile Include="Hul.cs" />
     <Compile Include="IKouzlo.cs" />
     <Compile Include="ITypPrisery.cs" />
     <Compile Include="IVybaveni.cs" />
-    <Compile Include="JitDal.xaml.cs">
+    <Compile Include="Mordor\JitDal.xaml.cs">
       <DependentUpon>JitDal.xaml</DependentUpon>
     </Compile>
     <Compile Include="Kouzla\Carodej.cs" />
@@ -79,6 +79,15 @@
     <Compile Include="Kouzla\Hobit.cs" />
     <Compile Include="Kouzla\Trpaslik.cs" />
     <Compile Include="Mec.cs" />
+    <Compile Include="Mordor\Mordor1.xaml.cs">
+      <DependentUpon>Mordor1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\Mordor1_2.xaml.cs">
+      <DependentUpon>Mordor1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\Mordor_Boj1.xaml.cs">
+      <DependentUpon>Mordor_Boj1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Morie\Morie1.xaml.cs">
       <DependentUpon>Morie1.xaml</DependentUpon>
     </Compile>
@@ -103,16 +112,16 @@
     <Compile Include="Morie\Morie_Boj2.xaml.cs">
       <DependentUpon>Morie_Boj2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NechatSiPrsten.xaml.cs">
+    <Compile Include="Mordor\NechatSiPrsten.xaml.cs">
       <DependentUpon>NechatSiPrsten.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PoDruhymBoji.xaml.cs">
+    <Compile Include="Mordor\PoDruhymBoji.xaml.cs">
       <DependentUpon>PoDruhymBoji.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pomoci.xaml.cs">
+    <Compile Include="Mordor\Pomoci.xaml.cs">
       <DependentUpon>Pomoci.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PoPrvnimBoji.xaml.cs">
+    <Compile Include="Mordor\PoPrvnimBoji.xaml.cs">
       <DependentUpon>PoPrvnimBoji.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pozemni.cs" />
@@ -121,18 +130,15 @@
     <Compile Include="Vybervybaveni.xaml.cs">
       <DependentUpon>Vybervybaveni.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SuperStartpribeh.xaml.cs">
-      <DependentUpon>SuperStartpribeh.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Vzdusny.cs" />
-    <Compile Include="ZnicitPrsten.xaml.cs">
+    <Compile Include="Mordor\ZnicitPrsten.xaml.cs">
       <DependentUpon>ZnicitPrsten.xaml</DependentUpon>
     </Compile>
-    <Page Include="DruhyBoj.xaml">
+    <Page Include="Mordor\DruhyBoj.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="JitDal.xaml">
+    <Page Include="Mordor\JitDal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,6 +154,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Mordor\Mordor1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\Mordor1_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\Mordor_Boj1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Morie\Morie1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -180,19 +198,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NechatSiPrsten.xaml">
+    <Page Include="Mordor\NechatSiPrsten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PoDruhymBoji.xaml">
+    <Page Include="Mordor\PoDruhymBoji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pomoci.xaml">
+    <Page Include="Mordor\Pomoci.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PoPrvnimBoji.xaml">
+    <Page Include="Mordor\PoPrvnimBoji.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -204,11 +222,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SuperStartpribeh.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ZnicitPrsten.xaml">
+    <Page Include="Mordor\ZnicitPrsten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
