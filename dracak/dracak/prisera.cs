@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace dracak
 {
-    class prisera
+    public class prisera
     {
         private string nazev;
         private int hodnotaUtoku;
         private int zivoty;
-        ITypPrisery interfacetypprisery;
+        public ITypPrisery interfacetypprisery;
+        public string nazevobrazku=> @"pack://application:,,,/dracak;component/Obrazky/" + nazev + ".jpg";
 
         public ITypPrisery typprisery
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dracak
 {
-    interface ITypPrisery
+    public interface ITypPrisery
     {
         int hodnotaUtoku { get; set; }
         string nazev { get; set; }

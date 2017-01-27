@@ -35,7 +35,7 @@ namespace dracak.Morie
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            App.Current.MainWindow.Content = new Morie_Boj1();
+            App.Current.MainWindow.Content = new VytvorBoj(new prisera("skret", new Pozemni()),new Morie3());
         }
     }
 }
