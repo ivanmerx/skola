@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using dracak.Morie;
 namespace dracak
 {
     /// <summary>
@@ -43,7 +43,7 @@ namespace dracak
            // App.hrac.Rasa = (sender as Button).ToString();
             App.hrac.Rasa = (e.Source as Button).Content.ToString();
 
-            App.Current.MainWindow.Content = new Vybervybaveni();
+            App.Current.MainWindow.Content = new VytvorPage(new Morie1(),"Epizoda 1\nklobasa","pribeh","Pokračovat");
         }
 
     }

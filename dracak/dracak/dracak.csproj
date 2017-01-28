@@ -133,6 +133,12 @@
     <Compile Include="VytvorBoj.xaml.cs">
       <DependentUpon>VytvorBoj.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VytvorPage.xaml.cs">
+      <DependentUpon>VytvorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VytvorPage2.xaml.cs">
+      <DependentUpon>VytvorPage2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Vzdusny.cs" />
     <Compile Include="Mordor\ZnicitPrsten.xaml.cs">
       <DependentUpon>ZnicitPrsten.xaml</DependentUpon>
@@ -230,6 +236,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VytvorBoj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VytvorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VytvorPage2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
