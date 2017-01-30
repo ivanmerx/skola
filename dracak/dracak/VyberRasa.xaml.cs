@@ -42,8 +42,8 @@ namespace dracak
         {
            // App.hrac.Rasa = (sender as Button).ToString();
             App.hrac.Rasa = (e.Source as Button).Content.ToString();
-
-            App.Current.MainWindow.Content = new VytvorPage(new Morie1(),"Epizoda 1\nklobasa","pribeh","Pokračovat");
+            string textmorie1 = "Vypraveč: Nacházíš se v trpasličích dolech v Morii se společenstvem prstenu a nyní máš za úkol se probojovat ven z hory.Vypravěč: Vidíš jak za vámi běží skupinka skřetů, nyní máš na výběr běžet dál a snažit se jim utéct a nebo se jim postavíš čelem a pokusíš se je zničit.";
+            App.Current.MainWindow.Content = new VytvorPage2(new Page(),new Page(),"Epizoda 1\nklobasa",textmorie1,"Utéci","Bojovat");
         }
 
     }
