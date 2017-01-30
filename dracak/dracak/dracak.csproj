@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21C51B13-F39E-451E-938E-23B0A5ACFD84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dracak</RootNamespace>
+    <AssemblyName>dracak</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.2.1.750, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.2.1.750\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Mordor\DruhyBoj.xaml.cs">
+      <DependentUpon>DruhyBoj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hul.cs" />
+    <Compile Include="IKouzlo.cs" />
+    <Compile Include="ITypPrisery.cs" />
+    <Compile Include="IVybaveni.cs" />
+    <Compile Include="Mordor\JitDal.xaml.cs">
+      <DependentUpon>JitDal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kouzla\Carodej.cs" />
+    <Compile Include="Kouzla\Clovek.cs" />
+    <Compile Include="Kouzla\Elf.cs" />
+    <Compile Include="Kouzla\Hobit.cs" />
+    <Compile Include="Kouzla\Trpaslik.cs" />
+    <Compile Include="Mec.cs" />
+    <Compile Include="Mordor\Mordor1.xaml.cs">
+      <DependentUpon>Mordor1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\Mordor1_2.xaml.cs">
+      <DependentUpon>Mordor1_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\Mordor_Boj1.xaml.cs">
+      <DependentUpon>Mordor_Boj1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie1.xaml.cs">
+      <DependentUpon>Morie1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie2_1.xaml.cs">
+      <DependentUpon>Morie2_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie3.xaml.cs">
+      <DependentUpon>Morie3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie4.xaml.cs">
+      <DependentUpon>Morie4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie4_1.xaml.cs">
+      <DependentUpon>Morie4_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie5.xaml.cs">
+      <DependentUpon>Morie5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie_Boj1.xaml.cs">
+      <DependentUpon>Morie_Boj1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Morie\Morie_Boj2.xaml.cs">
+      <DependentUpon>Morie_Boj2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\NechatSiPrsten.xaml.cs">
+      <DependentUpon>NechatSiPrsten.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\PoDruhymBoji.xaml.cs">
+      <DependentUpon>PoDruhymBoji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\Pomoci.xaml.cs">
+      <DependentUpon>Pomoci.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mordor\PoPrvnimBoji.xaml.cs">
+      <DependentUpon>PoPrvnimBoji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pozemni.cs" />
+    <Compile Include="prisera.cs" />
+    <Compile Include="Sekyra.cs" />
+    <Compile Include="Vybervybaveni.xaml.cs">
+      <DependentUpon>Vybervybaveni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VytvorBoj.xaml.cs">
+      <DependentUpon>VytvorBoj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VytvorPage.xaml.cs">
+      <DependentUpon>VytvorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VytvorPage2.xaml.cs">
+      <DependentUpon>VytvorPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vzdusny.cs" />
+    <Compile Include="Mordor\ZnicitPrsten.xaml.cs">
+      <DependentUpon>ZnicitPrsten.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Mordor\DruhyBoj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\JitDal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Mordor\Mordor1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\Mordor1_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\Mordor_Boj1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie2_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie4_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie_Boj1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Morie\Morie_Boj2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\NechatSiPrsten.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\PoDruhymBoji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\Pomoci.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\PoPrvnimBoji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VyberRasa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vybervybaveni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mordor\ZnicitPrsten.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VytvorBoj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VytvorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VytvorPage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="postava.cs" />
+    <Compile Include="VyberRasa.xaml.cs">
+      <DependentUpon>VyberRasa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <Resource Include="Fonty\MorrisRoman-Black.ttf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\hul.jpg" />
+    <Resource Include="Obrazky\mec.jpg" />
+    <Resource Include="Obrazky\sekera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\carodej.jpg" />
+    <Resource Include="Obrazky\clovek.jpg" />
+    <Resource Include="Obrazky\elf.jpg" />
+    <Resource Include="Obrazky\hobit.jpg" />
+    <Resource Include="Obrazky\mainwindow.jpg" />
+    <Resource Include="Obrazky\moriemain.jpg" />
+    <Resource Include="Obrazky\moriesecond.png" />
+    <Resource Include="Obrazky\trpaslik.png" />
+    <Resource Include="Obrazky\vyberrasa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\papir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\skret.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\balrog.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
