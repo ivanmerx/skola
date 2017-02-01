@@ -57,13 +57,13 @@ namespace dracak
 
             VytvorPage2 pribeh2 = new VytvorPage2();
             pribeh2 = new VytvorPage2();
-            pribeh2.Text1 = "Pica";
+            pribeh2.Text1 = "lol";
 
             pribeh.Presmerovani = pribeh2;
 
             VytvorPage2 pribeh3 = new VytvorPage2();
             pribeh3 = new VytvorPage2();
-            pribeh3.Text1 = "Pica2";
+            pribeh3.Text1 = "lol2";
             pribeh2.Presmerovani = pribeh3;
             pribeh2.Presmerovani2 = new Page();
 
