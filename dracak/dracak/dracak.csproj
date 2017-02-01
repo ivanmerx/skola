@@ -63,6 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="IPage.cs" />
     <Compile Include="Mordor\DruhyBoj.xaml.cs">
       <DependentUpon>DruhyBoj.xaml</DependentUpon>
     </Compile>
@@ -125,6 +126,7 @@
       <DependentUpon>PoPrvnimBoji.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pozemni.cs" />
+    <Compile Include="Pribeh.cs" />
     <Compile Include="prisera.cs" />
     <Compile Include="Sekyra.cs" />
     <Compile Include="Vybervybaveni.xaml.cs">
