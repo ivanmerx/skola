@@ -38,7 +38,7 @@ namespace SQLite
 
             ///   var itemsFromDb = Database.GetItemsAsync().Result;
             var itemsFromDb = Database.GetItemsNotDoneAsync().Result;
-
+            
             Debug.WriteLine("                             ");
             Debug.WriteLine("                             ");
             Debug.WriteLine("                             ");
@@ -46,7 +46,7 @@ namespace SQLite
             Debug.WriteLine(itemsFromDb.Count);
             foreach (Osoba todoItem in itemsFromDb)
             {
-                Debug.WriteLine(todoItem);
+                Debug.WriteLine(todoItem.ID);
             }
 
             Debug.WriteLine("                             ");
@@ -103,8 +103,17 @@ namespace SQLite
         }
         private void ToDoItemsListView_kliknuti(object sender, MouseButtonEventArgs e)
         {
-            NavigationService ns = NavigationService.GetNavigationService(this);
-            ns.Navigate(new Page1());
+            //NavigationService ns = NavigationService.GetNavigationService(this);
+            //ns.Navigate(new Page1());
+            string lol = label.Content.ToString();
+            //MessageBox.Show(ToDoItemsListView.Items[0].SubItem[1].ToString());
+            object lmao = ToDoItemsListView.SelectedItems;
+            //string kk = ((ListView)sender).Items[0].SubItem[2].ToString();
+            _mainFrame.Navigate(new Page1(lmao.ToString()));
+            //object item = ToDoItemsListView.SelectedItem;
+            //string ID = (ToDoItemsListView.SelectedItems[0] as TextBlock).Text;
+            //MessageBox.Show(ID);
+
         }
     }
 }

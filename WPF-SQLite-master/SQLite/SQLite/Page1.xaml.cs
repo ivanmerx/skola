@@ -20,9 +20,11 @@ namespace SQLite
     /// </summary>
     public partial class Page1 : Page
     {
-        public Page1()
+        private string id;
+        public Page1(string id)
         {
             InitializeComponent();
+            label.Content = id;
         }
     }
 }

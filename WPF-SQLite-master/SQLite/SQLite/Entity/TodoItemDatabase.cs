@@ -23,7 +23,7 @@ namespace SQLite.Entity
         // Query using SQL query string
         public Task<List<Osoba>> GetItemsNotDoneAsync()
         {
-            return database.QueryAsync<Osoba>("SELECT * FROM [Osoba]");
+            return database.QueryAsync<Osoba>("SELECT Jmeno FROM [Osoba]");
         }
         /*
         // Query using LINQ

@@ -15,5 +15,6 @@
         <Label x:Name="label1" Content="Příjmení"/>
         <TextBox x:Name="textBox" Height="23" TextWrapping="Wrap" Text=""/>
         <Button x:Name="button" Content="Vložit&#xD;&#xA;" Height="24" Click="button_Click"/>
+        <Frame x:Name="_mainFrame" />
     </StackPanel>
 </Window>
