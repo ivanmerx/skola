@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListView x:Name="OsobyInfo" HorizontalAlignment="Left" Height="627" Margin="15,13,0,0" Grid.Row="1" VerticalAlignment="Top" Width="577" Grid.ColumnSpan="3" FontSize="14" SelectionChanged="DriverListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="50" Header="ID" DisplayMemberBinding="{Binding DNo}"  />
+                    <GridViewColumn Width="100" Header="Jméno" DisplayMemberBinding="{Binding PDate}"  />
+                    <GridViewColumn Width="100" Header="Příjmení" DisplayMemberBinding="{Binding PRent}"  />
+                    <GridViewColumn Width="120" Header="DatNar" DisplayMemberBinding="{Binding Status}"  />
+                    <GridViewColumn Width="100" Header="Pohlaví" DisplayMemberBinding="{Binding Status}"  />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -13,18 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SQLite
+namespace WpfApplication4
 {
     /// <summary>
-    /// Interakční logika pro Page1.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class MainWindow : Window
     {
-        private int id;
-        public Page1(int id)
+        public MainWindow()
         {
             InitializeComponent();
-            label.Content = id;
+
+        }
+
+    private void DriverListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           /* if (DriverListView.SelectedItems.Count == 0) return;
+            MessageBox.Show(DriverListView.SelectedItems[0].ToString());*/
         }
     }
 }

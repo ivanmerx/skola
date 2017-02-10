@@ -23,8 +23,7 @@ namespace SQLite.Entity
 
         public override string ToString()
         {
-            //return "ID" + ID + " Name " + Name + " Text " + Text;
-            return "ID" + ID;
+            return "ID" + ID + " Name " + Name + " Text " + Text;
         }
     }
 }

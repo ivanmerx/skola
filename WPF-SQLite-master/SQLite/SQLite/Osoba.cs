@@ -24,5 +24,9 @@ namespace SQLite
         {
             return "ID" + ID + " Jméno " + Jmeno + " Příjmení " + Prijmeni + " Datum narození " + DatNar + " Pohlaví " + Pohlavi;
         }
+        public int idecko()
+        {
+            return ID;
+        }
     }
 }

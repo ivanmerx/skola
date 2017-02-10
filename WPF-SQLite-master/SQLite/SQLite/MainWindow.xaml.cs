@@ -33,25 +33,19 @@ namespace SQLite
             */
             Osoba osoba = new Osoba();
             osoba.Jmeno = "klobasa";
-            Database.SaveItemAsync(osoba);
+            osoba.Prijmeni = "lmao";
+            //Database.SaveItemAsync(osoba);
 
 
             ///   var itemsFromDb = Database.GetItemsAsync().Result;
             var itemsFromDb = Database.GetItemsNotDoneAsync().Result;
-            
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
 
             Debug.WriteLine(itemsFromDb.Count);
             foreach (Osoba todoItem in itemsFromDb)
             {
-                Debug.WriteLine(todoItem.ID);
+                Debug.WriteLine(todoItem);
             }
 
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
 
 
             ItemsCount.Content = "Items in Database " + itemsFromDb.Count;
@@ -73,43 +67,34 @@ namespace SQLite
             }
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            Osoba osoba = new Osoba();
-            osoba.Jmeno = textBox1.Text;
-            Database.SaveItemAsync(osoba);
+        //private void button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Osoba osoba = new Osoba();
+        //    //osoba.Jmeno = textBox1.Text;
+        //    Database.SaveItemAsync(osoba);
 
-            ///   var itemsFromDb = Database.GetItemsAsync().Result;
-            var itemsFromDb = Database.GetItemsNotDoneAsync().Result;
+        //    ///   var itemsFromDb = Database.GetItemsAsync().Result;
+        //    var itemsFromDb = Database.GetItemsNotDoneAsync().Result;
 
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
+        //    Debug.WriteLine(itemsFromDb.Count);
+        //    foreach (Osoba todoItem in itemsFromDb)
+        //    {
+        //        Debug.WriteLine(todoItem);
+        //    }
 
-            Debug.WriteLine(itemsFromDb.Count);
-            foreach (Osoba todoItem in itemsFromDb)
-            {
-                Debug.WriteLine(todoItem);
-            }
+        //    ItemsCount.Content = "Items in Database " + itemsFromDb.Count;
+        //    ToDoItemsListView.ItemsSource = itemsFromDb;
 
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
-            Debug.WriteLine("                             ");
-
-
-            ItemsCount.Content = "Items in Database " + itemsFromDb.Count;
-            ToDoItemsListView.ItemsSource = itemsFromDb;
-
-        }
+        //}
         private void ToDoItemsListView_kliknuti(object sender, MouseButtonEventArgs e)
         {
             //NavigationService ns = NavigationService.GetNavigationService(this);
             //ns.Navigate(new Page1());
             string lol = label.Content.ToString();
             //MessageBox.Show(ToDoItemsListView.Items[0].SubItem[1].ToString());
-            object lmao = ToDoItemsListView.SelectedItems;
+            int lmao = (((ListView)sender).SelectedItem as Osoba).ID;
             //string kk = ((ListView)sender).Items[0].SubItem[2].ToString();
-            _mainFrame.Navigate(new Page1(lmao.ToString()));
+            _mainFrame.Navigate(new Page1(lmao));
             //object item = ToDoItemsListView.SelectedItem;
             //string ID = (ToDoItemsListView.SelectedItems[0] as TextBlock).Text;
             //MessageBox.Show(ID);
