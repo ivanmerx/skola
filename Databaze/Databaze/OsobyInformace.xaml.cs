@@ -22,10 +22,12 @@ namespace Databaze_Full
     {
         private string id;
         Osoba osoba;
-        public OsobyInformace(Osoba osoba)
+        ListView listview;
+        public OsobyInformace(Osoba osoba, ListView listview)
         {
             InitializeComponent();
             this.osoba = osoba;
+            this.listview = listview;
             label.Content = "Úprava zápisu v databázi s ID = " + osoba.ID;
             if(osoba.Jmeno != "")
             {
@@ -46,7 +48,31 @@ namespace Databaze_Full
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(osoba.ID.ToString());
+
+            osoba.Jmeno = textBox.Text;
+            osoba.Prijmeni = textBox1.Text;
+            osoba.DatNar = textBox2.Text;
+            osoba.Pohlavi = textBox3.Text;
+            MainWindow.Database.UlozitUzivatele(osoba);
+            MainWindow.Database.GetItemsAsync();
+            var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;
+            foreach (Osoba osoba in itemsFromDb)
+            {
+                Debug.WriteLine(osoba);
+            }
+            listview.ItemsSource = itemsFromDb;
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.Database.SmazatUzivatele(osoba);
+            MainWindow.Database.GetItemsAsync();
+            var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;
+            foreach (Osoba osoba in itemsFromDb)
+            {
+                Debug.WriteLine(osoba);
+            }
+            listview.ItemsSource = itemsFromDb;
         }
     }
 }

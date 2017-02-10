@@ -59,8 +59,12 @@ namespace Databaze_Full
         private void OsobyInfo_kliknuti(object sender, MouseButtonEventArgs e)
         {
             Osoba lmao = (((ListView)sender).SelectedItem as Osoba);
-            frame.Navigate(new OsobyInformace(lmao));
+            frame.Navigate(new OsobyInformace(lmao, OsobyInfo));
         }
-        
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Navigate(new VytvorUzivatele(OsobyInfo));
+        }
     }
 }

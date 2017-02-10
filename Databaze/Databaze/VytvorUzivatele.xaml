@@ -1,14 +1,14 @@
-﻿<Page x:Class="Databaze_Full.OsobyInformace"
+﻿<Page x:Class="Databaze_Full.VytvorUzivatele"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Databaze"
+      xmlns:local="clr-namespace:Databaze_Full"
       mc:Ignorable="d" d:DesignWidth="300"
-      Title="OsobyInformace" Background="White" Height="319.328">
+      Title="VytvorUzivatele" Background="White" Height="319.328">
 
     <Grid>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="32"/>
+        <TextBlock x:Name="label" Text="Vytvoření uživatele" TextDecorations="Underline" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="32"/>
         <Grid HorizontalAlignment="Center" Height="190" VerticalAlignment="Center" Width="100" Margin="100,100,100,10">
             <StackPanel Margin="0,-52,0,0">
                 <Label x:Name="label1" Content="Jméno" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
@@ -19,8 +19,7 @@
                 <TextBox x:Name="textBox2" Height="23" TextWrapping="Wrap" Width="100" Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <Label x:Name="label4" Content="Pohlaví" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <TextBox x:Name="textBox3" Height="23" TextWrapping="Wrap" Width="100" Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <Button x:Name="button" Content="Změnit" Click="button_Click"/>
-                <Button x:Name="button1" Content="Smazat" Click="button1_Click"/>
+                <Button x:Name="button" Content="Vytvořit" Click="button_Click"/>
 
             </StackPanel>
         </Grid>

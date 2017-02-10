@@ -32,6 +32,15 @@ namespace Databaze_Full
         {
             return database.UpdateAsync(item);
         }
+        public Task<int> SmazatUzivatele(Osoba item)
+        {
+            return database.DeleteAsync(item);
+        }
+        public Task<int> VytvoritUzivatele(Osoba item)
+        {
+                return database.InsertAsync(item);
+            
+        }
         // Query using SQL query string
         public Task<List<Osoba>> GetItemsNotDoneAsync()
         {

@@ -23,7 +23,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Frame x:Name="frame" Content="shit" HorizontalAlignment="Left" MinHeight="104" Margin="0,400,0,0" VerticalAlignment="Top" Width="497"/>
+        <Frame x:Name="frame" HorizontalAlignment="Left" MinHeight="104" Margin="0,400,0,0" VerticalAlignment="Top" Width="497"/>
+        <Button x:Name="button" Content="Vytvořit" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Click="button_Click"/>
 
     </Grid>
 </Window>
