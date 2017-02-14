@@ -23,44 +23,108 @@ namespace Databaze_Full
         private string id;
         Osoba osoba;
         ListView listview;
+        string pohlavi;
         public OsobyInformace(Osoba osoba, ListView listview)
         {
             InitializeComponent();
             this.osoba = osoba;
             this.listview = listview;
             label.Content = "Úprava zápisu v databázi s ID = " + osoba.ID;
-            if(osoba.Jmeno != "")
+            if(osoba.Pohlavi.Equals("Muž"))
             {
-                textBox.Text = osoba.Jmeno;
-            } 
-            if(osoba.Prijmeni != ""){
-
-                textBox1.Text = osoba.Prijmeni;
-            } 
-            if(osoba.DatNar != "")
+                radioButton1.IsChecked = true;
+            }else
             {
-                textBox2.Text = osoba.DatNar;
-            } 
-            if(osoba.Pohlavi != "")
-            {
-                textBox3.Text = osoba.Pohlavi;
+                radioButton.IsChecked = true;
             }
+            textBox.Text = osoba.Jmeno;
+            textBox1.Text = osoba.Prijmeni;
+            textBox2.Text = osoba.DatNar;
+            //if(osoba.Jmeno != "")
+            //{
+            //    textBox.Text = osoba.Jmeno;
+            //} 
+            //if(osoba.Prijmeni != ""){
+
+            //    textBox1.Text = osoba.Prijmeni;
+            //} 
+            //if(osoba.DatNar != "")
+            //{
+            //    textBox2.Text = osoba.DatNar;
+            //} 
+            //if(osoba.Pohlavi != "")
+            //{
+            //    //textBox3.Text = osoba.Pohlavi;
+            //}
+        }
+        private void radioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            this.pohlavi = (string)(sender as RadioButton).Content;
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
-
-            osoba.Jmeno = textBox.Text;
-            osoba.Prijmeni = textBox1.Text;
-            osoba.DatNar = textBox2.Text;
-            osoba.Pohlavi = textBox3.Text;
-            MainWindow.Database.UlozitUzivatele(osoba);
-            MainWindow.Database.GetItemsAsync();
-            var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;
-            foreach (Osoba osoba in itemsFromDb)
+            int n;
+            bool isNumeric = int.TryParse(textBox2.Text, out n);
+            bool pomocna = true;
+            if (! String.IsNullOrEmpty(textBox.Text))
             {
-                Debug.WriteLine(osoba);
+                osoba.Jmeno = textBox.Text;
             }
-            listview.ItemsSource = itemsFromDb;
+            else
+            {
+                MessageBox.Show("Zadejte jméno");
+                pomocna = false;
+            }
+            if (! String.IsNullOrEmpty(textBox1.Text))
+            {
+                osoba.Prijmeni = textBox1.Text;
+            }
+            else
+            {
+                MessageBox.Show("Zadejte příjmení");
+                pomocna = false;
+            }
+            if (! String.IsNullOrEmpty(textBox2.Text))
+            {
+                if (!isNumeric)
+                {
+                    MessageBox.Show("Do datNar zadejte číslo");
+                    pomocna = false;
+                }
+                else
+                {
+                    osoba.DatNar = textBox2.Text;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Zadejte datNar");
+                pomocna = false;
+            }
+            if (!String.IsNullOrEmpty(pohlavi))
+            {
+                osoba.Pohlavi = pohlavi;
+            }
+            else
+            {
+                MessageBox.Show("Vyberte pohlaví");
+                pomocna = false;
+            }
+            //osoba.Pohlavi = textBox3.Text;
+            if (pomocna)
+            {
+                MainWindow.Database.UlozitUzivatele(osoba);
+                MainWindow.Database.GetItemsAsync();
+                var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;
+                foreach (Osoba osoba in itemsFromDb)
+                {
+                    Debug.WriteLine(osoba);
+                }
+                listview.ItemsSource = itemsFromDb;
+            }else
+            {
+                MessageBox.Show("Zápis do databáze neproběhl");
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -74,5 +138,7 @@ namespace Databaze_Full
             }
             listview.ItemsSource = itemsFromDb;
         }
+
+
     }
 }

@@ -18,7 +18,18 @@
                 <Label x:Name="label3" Content="DatNar" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <TextBox x:Name="textBox2" Height="23" TextWrapping="Wrap" Width="100" Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <Label x:Name="label4" Content="Pohlaví" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBox x:Name="textBox3" Height="23" TextWrapping="Wrap" Width="100" Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton x:Name="radioButton" Grid.Column="0" Content="Žena" Checked="radioButton_Checked"/>
+                    <RadioButton x:Name="radioButton1" Grid.Column="1" Content="Muž"  Checked="radioButton_Checked"/>
+                </Grid>
                 <Button x:Name="button" Content="Změnit" Click="button_Click"/>
                 <Button x:Name="button1" Content="Smazat" Click="button1_Click"/>
 
