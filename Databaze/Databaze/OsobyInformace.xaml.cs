@@ -30,6 +30,7 @@ namespace Databaze_Full
             this.osoba = osoba;
             this.listview = listview;
             label.Content = "Úprava zápisu v databázi s ID = " + osoba.ID;
+            
             if(osoba.Pohlavi.Equals("Muž"))
             {
                 radioButton1.IsChecked = true;
@@ -37,6 +38,7 @@ namespace Databaze_Full
             {
                 radioButton.IsChecked = true;
             }
+            
             textBox.Text = osoba.Jmeno;
             textBox1.Text = osoba.Prijmeni;
             textBox2.Text = osoba.DatNar;
