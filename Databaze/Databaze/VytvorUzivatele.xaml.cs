@@ -24,6 +24,8 @@ namespace Databaze_Full
     {
         ListView listview;
         string pohlavi;
+        string datNar1cast;
+        string datNar2cast;
         public VytvorUzivatele(ListView listview)
         {
             InitializeComponent();
@@ -67,13 +69,44 @@ namespace Databaze_Full
                 }
                 else
                 {
-                    osoba2.DatNar = textBox2.Text;
+                    if (textBox2.Text.Length != 6)
+                    {
+                        MessageBox.Show("Špatný počet čísel v první části rodného čísla");
+                        pomocny = false;
+                    }
+                    else
+                    {
+                        datNar1cast = textBox2.Text;
+                    }
                 }
             }
             else
             {
                 MessageBox.Show("Zadejte datNar");
                 pomocny = false;
+            }
+            if (String.IsNullOrEmpty(textBox3.Text))
+            {
+                MessageBox.Show("Zadejte za / čísla");
+                pomocny = false;
+            }else
+            {
+                if (!isNumeric)
+                {
+                    MessageBox.Show("Zadejte čísla");
+                    pomocny = false;
+                }else
+                {
+                    if (textBox3.Text.Length != 4)
+                    {
+                        MessageBox.Show("Špatný počet čísel ve druhé části rodného čísla");
+                        pomocny = false;
+                    }
+                    else
+                    {
+                        datNar2cast = textBox3.Text;
+                    }
+                }
             }
             if (!String.IsNullOrEmpty(pohlavi))
             {
@@ -93,6 +126,7 @@ namespace Databaze_Full
             //osoba2.Pohlavi = textBox3.Text;
             if (pomocny)
             {
+                osoba2.DatNar = datNar1cast+"/"+datNar2cast;
                 MainWindow.Database.VytvoritUzivatele(osoba2);
                 MainWindow.Database.GetItemsAsync();
                 var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;

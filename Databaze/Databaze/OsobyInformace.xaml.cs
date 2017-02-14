@@ -24,6 +24,8 @@ namespace Databaze_Full
         Osoba osoba;
         ListView listview;
         string pohlavi;
+        string datNar1cast;
+        string datNar2cast;
         public OsobyInformace(Osoba osoba, ListView listview)
         {
             InitializeComponent();
@@ -41,7 +43,8 @@ namespace Databaze_Full
             
             textBox.Text = osoba.Jmeno;
             textBox1.Text = osoba.Prijmeni;
-            textBox2.Text = osoba.DatNar;
+            textBox3.Text = osoba.DatNar.Substring(osoba.DatNar.Length - 4);
+            textBox2.Text = osoba.DatNar.Substring(0, 6);
             //if(osoba.Jmeno != "")
             //{
             //    textBox.Text = osoba.Jmeno;
@@ -67,41 +70,74 @@ namespace Databaze_Full
         {
             int n;
             bool isNumeric = int.TryParse(textBox2.Text, out n);
-            bool pomocna = true;
-            if (! String.IsNullOrEmpty(textBox.Text))
+            bool pomocny = true;
+            if (!String.IsNullOrEmpty(textBox.Text))
             {
                 osoba.Jmeno = textBox.Text;
             }
             else
             {
                 MessageBox.Show("Zadejte jméno");
-                pomocna = false;
+                pomocny = false;
             }
-            if (! String.IsNullOrEmpty(textBox1.Text))
+            if (!String.IsNullOrEmpty(textBox1.Text))
             {
                 osoba.Prijmeni = textBox1.Text;
             }
             else
             {
                 MessageBox.Show("Zadejte příjmení");
-                pomocna = false;
+                pomocny = false;
             }
-            if (! String.IsNullOrEmpty(textBox2.Text))
+            if (!String.IsNullOrEmpty(textBox2.Text))
             {
                 if (!isNumeric)
                 {
                     MessageBox.Show("Do datNar zadejte číslo");
-                    pomocna = false;
+                    pomocny = false;
                 }
                 else
                 {
-                    osoba.DatNar = textBox2.Text;
+                    if (textBox2.Text.Length != 6)
+                    {
+                        MessageBox.Show("Špatný počet čísel v první části rodného čísla");
+                        pomocny = false;
+                    }
+                    else
+                    {
+                        datNar1cast = textBox2.Text;
+                    }
                 }
             }
             else
             {
                 MessageBox.Show("Zadejte datNar");
-                pomocna = false;
+                pomocny = false;
+            }
+            if (String.IsNullOrEmpty(textBox3.Text))
+            {
+                MessageBox.Show("Zadejte za / čísla");
+                pomocny = false;
+            }
+            else
+            {
+                if (!isNumeric)
+                {
+                    MessageBox.Show("Zadejte čísla");
+                    pomocny = false;
+                }
+                else
+                {
+                    if (textBox3.Text.Length != 4)
+                    {
+                        MessageBox.Show("Špatný počet čísel ve druhé části rodného čísla");
+                        pomocny = false;
+                    }
+                    else
+                    {
+                        datNar2cast = textBox3.Text;
+                    }
+                }
             }
             if (!String.IsNullOrEmpty(pohlavi))
             {
@@ -109,12 +145,13 @@ namespace Databaze_Full
             }
             else
             {
+                pomocny = false;
                 MessageBox.Show("Vyberte pohlaví");
-                pomocna = false;
             }
             //osoba.Pohlavi = textBox3.Text;
-            if (pomocna)
+            if (pomocny)
             {
+                osoba.DatNar = datNar1cast + "/" + datNar2cast;
                 MainWindow.Database.UlozitUzivatele(osoba);
                 MainWindow.Database.GetItemsAsync();
                 var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;
