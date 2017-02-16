@@ -15,8 +15,8 @@ namespace Layouts.Views
             InitializeComponent();
             List<Osoba> ListMain = new List<Osoba>();
             ListMain.Add(new Osoba("Jakub", "Březina", 68, 608450845));
-            ListMain.Add(new Osoba("David", "Šourek", 15, 123456789));
-            ListMain.Add(new Osoba("Standa", "Hulín", 69, 123456789));
+            ListMain.Add(new Osoba("Šimon", "Hrubý", 15, 123456789));
+            ListMain.Add(new Osoba("Simona", "Hrubá", 69, 123456789));
 
             list2.ItemsSource = ListMain;
 
