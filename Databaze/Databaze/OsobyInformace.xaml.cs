@@ -32,14 +32,17 @@ namespace Databaze_Full
             this.osoba = osoba;
             this.listview = listview;
             label.Content = "Úprava zápisu v databázi s ID = " + osoba.ID;
-            
-            if(osoba.Pohlavi.Equals("Muž"))
+            string date = osoba.DatNar;
+            int datepomocna = Int32.Parse(19+(date[4] + "" + date[5]));
+            textBlock1.Text = "Člověku je nebo tento rok bude "+(2017-datepomocna).ToString();
+            if (osoba.Pohlavi.Equals("Muž"))
             {
                 radioButton1.IsChecked = true;
             }else
             {
                 radioButton.IsChecked = true;
             }
+            
             
             textBox.Text = osoba.Jmeno;
             textBox1.Text = osoba.Prijmeni;
@@ -152,6 +155,7 @@ namespace Databaze_Full
             if (pomocny)
             {
                 osoba.DatNar = datNar1cast + "/" + datNar2cast;
+                osoba.SecondTimestamp = DateTime.Now;
                 MainWindow.Database.UlozitUzivatele(osoba);
                 MainWindow.Database.GetItemsAsync();
                 var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;

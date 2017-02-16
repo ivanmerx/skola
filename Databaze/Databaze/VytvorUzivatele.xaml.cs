@@ -127,6 +127,7 @@ namespace Databaze_Full
             if (pomocny)
             {
                 osoba2.DatNar = datNar1cast+"/"+datNar2cast;
+                osoba2.FirstTimestamp = DateTime.Now;
                 MainWindow.Database.VytvoritUzivatele(osoba2);
                 MainWindow.Database.GetItemsAsync();
                 var itemsFromDb = MainWindow.Database.GetItemsNotDoneAsync().Result;

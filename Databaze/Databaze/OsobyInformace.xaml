@@ -9,23 +9,25 @@
 
     <Grid>
         <Label x:Name="label" Content="Label" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Height="32"/>
-        <Grid HorizontalAlignment="Center" Height="190" VerticalAlignment="Center" Width="100" Margin="100,100,100,10">
-            <StackPanel Margin="0,-52,0,0">
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Text="" Margin="0,46,0,0"/>
+        <Grid HorizontalAlignment="Center" Height="199" VerticalAlignment="Center" Width="100" Margin="100,110,100,10">
+            <StackPanel Margin="0,-52,0,-8">
+
                 <Label x:Name="label1" Content="Jméno" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
                 <TextBox x:Name="textBox" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="100"/>
                 <Label x:Name="label2" Content="Příjmení" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <TextBox x:Name="textBox1" Height="23" TextWrapping="Wrap" Width="100" Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"/>
 
-                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Label x:Name="label3" Content="DatNar" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     <TextBox x:Name="textBox2" Height="23" Grid.Row="1" Grid.Column="0"  TextWrapping="Wrap" Width="55" Text="" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
