@@ -17,9 +17,9 @@ namespace SQLiteExample
             var dbConnection = App.Database;
 
             TodoItemDatabase todoItemDatabase = App.Database;
-            TodoItem item = new TodoItem();
-            item.Name = "item";
-            item.Text = "item text";
+            Osoba item = new Osoba();
+            item.Jmeno = "item";
+            item.Prijmeni = "item text";
             App.Database.SaveItemAsync(item);
 
 
@@ -30,7 +30,7 @@ namespace SQLiteExample
             Debug.WriteLine("                             ");
 
             Debug.WriteLine(itemsFromDb.Count);
-            foreach (TodoItem todoItem in itemsFromDb)
+            foreach (Osoba todoItem in itemsFromDb)
             {
                 Debug.WriteLine(  todoItem );
             }
@@ -40,8 +40,13 @@ namespace SQLiteExample
             Debug.WriteLine("                             ");
 
 
-            ItemsCount.Text = "Items in Database " + itemsFromDb.Count;
-            ToDoItemsListView.ItemsSource = itemsFromDb;
+            //ItemsCount.Text = "Items in Database " + itemsFromDb.Count;
+            //ToDoItemsListView.ItemsSource = itemsFromDb;
+
+        }
+        public void ButtonClick(Object sender, EventArgs e)
+        {
+
         }
     }
 }
