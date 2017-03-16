@@ -44,23 +44,8 @@ namespace dracak
             {
                 App.hrac.vybaveni = new Hul();
             }
-            string textmorie1 = "Vypraveč: Nacházíš se v trpasličích dolech v Morii se společenstvem prstenu a nyní máš za úkol se probojovat ven z hory. Z temných chodeb Morie slyšíš zvuky skřetů. Přijde ti, že se skřeti přibližují";
-            string textmorie2= "Vypravěč: Vidíš jak za vámi běží skupinka skřetů, nyní máš na výběr běžet dál a snažit se jim utéct a nebo se jim postavíš čelem a pokusíš se je zničit.";
-            string textmorie2_1 = "Vypravěč: Nyní vás skřeti zahnali do místnosti se zamčenými dveřmi, odraž zatím útok dvou skřetů, kteří se odvážili na vás zaútočit mezitím, co ostatní budou ničit dveře.";
-            string textmorie3 = "Vypravěč: Výborně, porazil jsi skupinu skřetů!\nVypravěč: Už vidíš výlez z hory, ale v tom uslyšíš divné zvuky a pomalu ti dochází kdo to za tebou letí z hlubin hory.";
-            string textmorie4 = "Vypraveč: Vidíš jak se začíná most pomalu bořit a tak rychle utíkáte ke konci.\nVypravěč: Most se zbořil, ale část ještě stále stojí, vidíš jak se před tebou objevilo mohutné stvoření zla z hory jménem Balrog!\nVypravěč: Hodláš s Balrogem bojovat, nebo se chceš pokusit utéct";
-            //App.Current.MainWindow.Content = new VytvorPage2(new VytvorPage(new Page(), "Epizoda 1\nMorie", textmorie2_1, "Zničit je!"), new VytvorBoj(new prisera("skret", new Pozemni()), new VytvorPage(new VytvorPage2(new Page(),new Page(),"Epizoda 1\nMorie",textmorie4,"Utéci","Bojovat"),"Epizoda 1\nMorie",textmorie3,"Rychle běžet přes most")), "Epizoda 1\nMorie", textmorie1, "Utéci", "Bojovat");
-
-            Pribeh pribehy = new Pribeh();
-            //VytvorPage pribeh2 = new VytvorPage();
-            //pribeh2.Text1 = "lmao";
-            VytvorPage pribeh = pribehy.Pridat(new VytvorPage());
-            pribeh.Text1 = textmorie1;
             //pribeh.button.Content = "Jít dál";
-            
-            VytvorPage pribeh3 = new VytvorPage(true);
-            pribeh.Presmerovani = pribeh3;
-            pribeh3.Presmerovani2 = new Page();
+
             //pribeh3 = new VytvorPage2();
             //pribeh3.Text1 = textmorie2_1;
             //pribeh2.Presmerovani = pribeh3;
@@ -70,7 +55,7 @@ namespace dracak
             //pribeh4.Text1 = "lol";
             //pribeh2.Presmerovani2 = new VytvorBoj(new prisera("skret",new Pozemni()),pribeh4);
 
-            App.Current.MainWindow.Content = pribeh;
+            App.Current.MainWindow.Content = new Rozcestnik();
         }
     }
 }

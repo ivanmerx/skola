@@ -128,6 +128,9 @@
     <Compile Include="Pozemni.cs" />
     <Compile Include="Pribeh.cs" />
     <Compile Include="prisera.cs" />
+    <Compile Include="Rozcestnik.xaml.cs">
+      <DependentUpon>Rozcestnik.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sekyra.cs" />
     <Compile Include="Vybervybaveni.xaml.cs">
       <DependentUpon>Vybervybaveni.xaml</DependentUpon>
@@ -138,12 +141,12 @@
     <Compile Include="VytvorPage.xaml.cs">
       <DependentUpon>VytvorPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VytvorPage2.xaml.cs">
-      <DependentUpon>VytvorPage2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Vzdusny.cs" />
     <Compile Include="Mordor\ZnicitPrsten.xaml.cs">
       <DependentUpon>ZnicitPrsten.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZacitPribeh.xaml.cs">
+      <DependentUpon>ZacitPribeh.xaml</DependentUpon>
     </Compile>
     <Page Include="Mordor\DruhyBoj.xaml">
       <SubType>Designer</SubType>
@@ -225,6 +228,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Rozcestnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VyberRasa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -245,7 +252,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="VytvorPage2.xaml">
+    <Page Include="ZacitPribeh.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

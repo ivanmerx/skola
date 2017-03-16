@@ -35,6 +35,7 @@ namespace dracak
             set
             {
                 text1 = value;
+                pribeh.Text = text1;
 
             }
         }
@@ -63,18 +64,18 @@ namespace dracak
         }
         //Page nazev,string texthlavni, string text1,string nazevbuttonu
 
-        public VytvorPage(bool vicetlacitek = false) 
+        public VytvorPage(string tlacitko1,string tlacitko2 = null) 
         {
             InitializeComponent();
             Button btn = new Button();
-            btn.Content = "lmao";
+            btn.Content = tlacitko1;
             btn.Tag = 1;
             btn.Click += new RoutedEventHandler(button_Click);
             buttons.Children.Add(btn);
-            if (vicetlacitek)
+            if (tlacitko2 != null)
             {
                 Button btn2 = new Button();
-                btn2.Content = "lmao2";
+                btn2.Content = tlacitko2;
                 btn2.Tag = 2;
                 btn2.Click += new RoutedEventHandler(button_Click);
                 Thickness margin = btn.Margin;
@@ -94,12 +95,10 @@ namespace dracak
             if (((Button)sender).Tag.ToString() == "1")
             {
                 App.Current.MainWindow.Content = presmerovani;
-                MessageBox.Show("zalud");
             }
             else
             {
                 App.Current.MainWindow.Content = presmerovani2;
-                MessageBox.Show("zalud2");
             }
         }
     }
