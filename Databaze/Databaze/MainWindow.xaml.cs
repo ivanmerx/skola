@@ -60,11 +60,14 @@ namespace Databaze_Full
         {
             Osoba lmao = (((ListView)sender).SelectedItem as Osoba);
             frame.Navigate(new OsobyInformace(lmao, OsobyInfo));
+            frame.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             frame.Navigate(new VytvorUzivatele(OsobyInfo));
+            frame.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
         }
+
     }
 }

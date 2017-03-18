@@ -15,7 +15,8 @@ namespace Databaze_Full
         public string Prijmeni { get; set; }
         public string DatNar { get; set; }
         public string Pohlavi { get; set; }
-
+        public DateTime FirstTimestamp { get; set; }
+        public DateTime SecondTimestamp { get; set; }
         public int Done { get; set; }
         public Osoba()
         {

@@ -17,11 +17,7 @@
                   <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <controls:CircleImage Source="http://www.arthistoryarchive.com/arthistory/cubism/images/PabloPicasso-Weeping-Woman-with-Handkerchief-1937.jpg"
-                      Aspect="AspectFill"
-                      AbsoluteLayout.LayoutFlags="XProportional"
-                      AbsoluteLayout.LayoutBounds="0.5,20,20,20">
-                </controls:CircleImage>
+                <Image Grid.Column="0" Source="https://www.askmpa.com/wp-content/uploads/Donnie-head-shot-circle.jpg"/>
                 <StackLayout Grid.Column="1">
                   <Label Text="{Binding ZiskejJmeno}" FontAttributes="Bold" ></Label>
                   <Label Text="{Binding ZiskejVek}" FontAttributes="Bold" ></Label>
