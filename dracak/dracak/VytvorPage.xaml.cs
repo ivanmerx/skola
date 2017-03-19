@@ -84,7 +84,7 @@ namespace dracak
                 buttons.Children.Add(btn2);
             }
             this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/moriesecond.png")));
-            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/papir.jpg"));
+            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/papir2.jpg"));
             //FontFamily="pack://application:,,,/Fonty/#Morris Roman"
         }
 

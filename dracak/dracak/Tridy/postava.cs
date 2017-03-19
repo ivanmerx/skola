@@ -13,6 +13,19 @@ namespace dracak
         private int zivoty = 100;
         IVybaveni interfaceVybaveni;
         IKouzlo interfaceKouzlo;
+        private int xp;
+        public int Xp
+        {
+            get
+            {
+                return xp;
+            }
+
+            set
+            {
+                xp = value;
+            }
+        }
         public IVybaveni vybaveni
         {
             get

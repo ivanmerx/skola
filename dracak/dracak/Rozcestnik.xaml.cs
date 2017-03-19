@@ -23,6 +23,18 @@ namespace dracak
         public Rozcestnik()
         {
             InitializeComponent();
+            //image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/rozcestnik.jpg"));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/rozcestnik.jpg")));
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            new ZacitPribeh();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            App.Current.MainWindow.Content = new Arena();
         }
     }
 }

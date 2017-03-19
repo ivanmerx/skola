@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace dracak
 {
-    class Pozemni : ITypPrisery
+    class Vzdusny : ITypPrisery
     {
-        private int HodnotaUtoku = 30;
-        private string Nazev = "Nazgûl";
-        private int Zivoty = 100;
+        private int HodnotaUtoku = 32;
+        //private string Nazev = "Drak Nazgûla";
+        private int Zivoty = 60;
 
         public int hodnotaUtoku
         {
@@ -25,18 +25,18 @@ namespace dracak
             }
         }
 
-        public string nazev
-        {
-            get
-            {
-                return Nazev;
-            }
+        //public string nazev
+        //{
+        //    get
+        //    {
+        //        return Nazev;
+        //    }
 
-            set
-            {
-                Nazev = value;
-            }
-        }
+        //    set
+        //    {
+        //        Nazev = value;
+        //    }
+        //}
 
         public int zivoty
         {

@@ -26,7 +26,7 @@ namespace dracak
             InitializeComponent();
             prisera.typprisery = new Pozemni();
             textBlock.Text = App.hrac.Rasa + " " + App.hrac.Jmeno + "\nHodnota útoku: " + App.hrac.vybaveni.hodnotaUtoku + "\nNázev zbraně: " + App.hrac.vybaveni.nazev;
-            textBlock2.Text = prisera.typprisery.nazev + "\nHodnota útoku: " + prisera.typprisery.hodnotaUtoku;
+            //textBlock2.Text = prisera.typprisery.nazev + "\nHodnota útoku: " + prisera.typprisery.hodnotaUtoku;
             textBlock1.Text = App.hrac.Zivoty.ToString();
             textBlock3.Text = prisera.typprisery.zivoty.ToString();
         }

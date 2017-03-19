@@ -9,6 +9,7 @@ namespace dracak
     public class prisera
     {
         private string nazev;
+        private string nazevobrazku1;
         private int hodnotaUtoku;
         private int zivoty;
         public ITypPrisery interfacetypprisery;
@@ -45,6 +46,17 @@ namespace dracak
             set
             {
                 hodnotaUtoku = value;
+            }
+        }
+        public string NazevObrazku
+        {
+            get
+            {
+                return nazevobrazku1;
+            }
+            set
+            {
+                nazevobrazku1 = value;
             }
         }
         public int Zivoty

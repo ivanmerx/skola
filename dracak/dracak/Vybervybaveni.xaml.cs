@@ -56,6 +56,7 @@ namespace dracak
             //pribeh2.Presmerovani2 = new VytvorBoj(new prisera("skret",new Pozemni()),pribeh4);
 
             App.Current.MainWindow.Content = new Rozcestnik();
+            //new ZacitPribeh();
         }
     }
 }

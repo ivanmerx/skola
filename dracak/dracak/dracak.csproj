@@ -63,14 +63,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="IPage.cs" />
-    <Compile Include="Mordor\DruhyBoj.xaml.cs">
-      <DependentUpon>DruhyBoj.xaml</DependentUpon>
+    <Compile Include="Arena.xaml.cs">
+      <DependentUpon>Arena.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Hul.cs" />
-    <Compile Include="IKouzlo.cs" />
-    <Compile Include="ITypPrisery.cs" />
-    <Compile Include="IVybaveni.cs" />
+    <Compile Include="Tridy\Hul.cs" />
+    <Compile Include="Interface\IKouzlo.cs" />
+    <Compile Include="Interface\ITypPrisery.cs" />
+    <Compile Include="Interface\IVybaveni.cs" />
     <Compile Include="Mordor\JitDal.xaml.cs">
       <DependentUpon>JitDal.xaml</DependentUpon>
     </Compile>
@@ -79,7 +78,7 @@
     <Compile Include="Kouzla\Elf.cs" />
     <Compile Include="Kouzla\Hobit.cs" />
     <Compile Include="Kouzla\Trpaslik.cs" />
-    <Compile Include="Mec.cs" />
+    <Compile Include="Tridy\Mec.cs" />
     <Compile Include="Mordor\Mordor1.xaml.cs">
       <DependentUpon>Mordor1.xaml</DependentUpon>
     </Compile>
@@ -125,13 +124,13 @@
     <Compile Include="Mordor\PoPrvnimBoji.xaml.cs">
       <DependentUpon>PoPrvnimBoji.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pozemni.cs" />
-    <Compile Include="Pribeh.cs" />
-    <Compile Include="prisera.cs" />
+    <Compile Include="Tridy\Pozemni.cs" />
+    <Compile Include="Tridy\Pribeh.cs" />
+    <Compile Include="Tridy\prisera.cs" />
     <Compile Include="Rozcestnik.xaml.cs">
       <DependentUpon>Rozcestnik.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Sekyra.cs" />
+    <Compile Include="Tridy\Sekyra.cs" />
     <Compile Include="Vybervybaveni.xaml.cs">
       <DependentUpon>Vybervybaveni.xaml</DependentUpon>
     </Compile>
@@ -141,14 +140,14 @@
     <Compile Include="VytvorPage.xaml.cs">
       <DependentUpon>VytvorPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Vzdusny.cs" />
+    <Compile Include="Tridy\Vzdusny.cs" />
     <Compile Include="Mordor\ZnicitPrsten.xaml.cs">
       <DependentUpon>ZnicitPrsten.xaml</DependentUpon>
     </Compile>
     <Compile Include="ZacitPribeh.xaml.cs">
       <DependentUpon>ZacitPribeh.xaml</DependentUpon>
     </Compile>
-    <Page Include="Mordor\DruhyBoj.xaml">
+    <Page Include="Arena.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -258,7 +257,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="postava.cs" />
+    <Compile Include="Tridy\postava.cs" />
     <Compile Include="VyberRasa.xaml.cs">
       <DependentUpon>VyberRasa.xaml</DependentUpon>
     </Compile>
@@ -317,6 +316,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Obrazky\balrog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\papir2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\rozcestnik.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

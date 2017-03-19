@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
+
 namespace dracak
 {
-    public partial class IPage : Page
+    public interface ITypPrisery
     {
-
+        int hodnotaUtoku { get; set; }
+        //string nazev { get; set; }
+        int zivoty { get; set; }
     }
 }

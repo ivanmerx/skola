@@ -27,7 +27,7 @@ namespace dracak
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            App.Current.MainWindow.Content = new DruhyBoj();
+            //App.Current.MainWindow.Content = new DruhyBoj();
         }
     }
 }
