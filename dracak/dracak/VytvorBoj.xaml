@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:dracak"
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="815"
-      Title="VytvorBoj" Background="White">
+      Title="VytvorBoj" Background="White" Foreground="White">
 
     <Grid>
         <Grid.RowDefinitions>

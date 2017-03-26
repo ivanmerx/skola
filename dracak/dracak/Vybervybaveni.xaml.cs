@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using dracak.Morie;
 namespace dracak
 {
     /// <summary>
@@ -24,9 +23,10 @@ namespace dracak
         {
             InitializeComponent();
             textBlock.Text = "Vítej válečníku " + App.hrac.Jmeno + "\nVybral jsi si rasu " + App.hrac.Rasa + "\nNyní si vyber výzbroj";
-            image1.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/mec.jpg"));
-            image2.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/sekera.jpg"));
-            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/hul.jpg"));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/vybratvybavenibg.jpg")));
+            image1.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/mec.png"));
+            image2.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/sekera.png"));
+            image.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/hul.png"));
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

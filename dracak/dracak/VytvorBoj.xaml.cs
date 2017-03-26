@@ -13,8 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using dracak.Kouzla;
-using dracak.Morie;
-using dracak.Mordor;
 
 namespace dracak
 {
@@ -25,7 +23,7 @@ namespace dracak
     {
         private prisera Prisera;
         private Page nazev;
-        public VytvorBoj(prisera Prisera, Page nazev)
+        public VytvorBoj(prisera Prisera, Page nazev, string nazevobrazku, string nazevobrazkubg)
         {
             InitializeComponent();
             this.Prisera = Prisera;
@@ -37,6 +35,8 @@ namespace dracak
             textBlock1.Text = App.hrac.Zivoty.ToString();
             textBlock3.Text = Prisera.typprisery.zivoty.ToString();
             textBlock4.Text = "Hodnota útoku " + App.hrac.vybaveni.hodnotaUtoku;
+            image1.Source = new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/"+nazevobrazku));
+            this.Background = new ImageBrush(new BitmapImage(new Uri(@"pack://application:,,,/dracak;component/Obrazky/" + nazevobrazkubg)));
             //image1.Source = new BitmapImage(new Uri(Prisera.nazevobrazku));
             if (App.hrac.Rasa == "Člověk")
             {

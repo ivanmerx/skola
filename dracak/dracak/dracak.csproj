@@ -70,60 +70,12 @@
     <Compile Include="Interface\IKouzlo.cs" />
     <Compile Include="Interface\ITypPrisery.cs" />
     <Compile Include="Interface\IVybaveni.cs" />
-    <Compile Include="Mordor\JitDal.xaml.cs">
-      <DependentUpon>JitDal.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Kouzla\Carodej.cs" />
     <Compile Include="Kouzla\Clovek.cs" />
     <Compile Include="Kouzla\Elf.cs" />
     <Compile Include="Kouzla\Hobit.cs" />
     <Compile Include="Kouzla\Trpaslik.cs" />
     <Compile Include="Tridy\Mec.cs" />
-    <Compile Include="Mordor\Mordor1.xaml.cs">
-      <DependentUpon>Mordor1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Mordor\Mordor1_2.xaml.cs">
-      <DependentUpon>Mordor1_2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Mordor\Mordor_Boj1.xaml.cs">
-      <DependentUpon>Mordor_Boj1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie1.xaml.cs">
-      <DependentUpon>Morie1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie2_1.xaml.cs">
-      <DependentUpon>Morie2_1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie3.xaml.cs">
-      <DependentUpon>Morie3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie4.xaml.cs">
-      <DependentUpon>Morie4.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie4_1.xaml.cs">
-      <DependentUpon>Morie4_1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie5.xaml.cs">
-      <DependentUpon>Morie5.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie_Boj1.xaml.cs">
-      <DependentUpon>Morie_Boj1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Morie\Morie_Boj2.xaml.cs">
-      <DependentUpon>Morie_Boj2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Mordor\NechatSiPrsten.xaml.cs">
-      <DependentUpon>NechatSiPrsten.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Mordor\PoDruhymBoji.xaml.cs">
-      <DependentUpon>PoDruhymBoji.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Mordor\Pomoci.xaml.cs">
-      <DependentUpon>Pomoci.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Mordor\PoPrvnimBoji.xaml.cs">
-      <DependentUpon>PoPrvnimBoji.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Tridy\Pozemni.cs" />
     <Compile Include="Tridy\Pribeh.cs" />
     <Compile Include="Tridy\prisera.cs" />
@@ -141,17 +93,10 @@
       <DependentUpon>VytvorPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tridy\Vzdusny.cs" />
-    <Compile Include="Mordor\ZnicitPrsten.xaml.cs">
-      <DependentUpon>ZnicitPrsten.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ZacitPribeh.xaml.cs">
       <DependentUpon>ZacitPribeh.xaml</DependentUpon>
     </Compile>
     <Page Include="Arena.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\JitDal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -167,66 +112,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Mordor\Mordor1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\Mordor1_2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\Mordor_Boj1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie2_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie4.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie4_1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie5.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie_Boj1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Morie\Morie_Boj2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\NechatSiPrsten.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\PoDruhymBoji.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\Pomoci.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\PoPrvnimBoji.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Rozcestnik.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -236,10 +121,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Vybervybaveni.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Mordor\ZnicitPrsten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -293,11 +174,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Obrazky\hul.jpg" />
-    <Resource Include="Obrazky\mec.jpg" />
-    <Resource Include="Obrazky\sekera.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Obrazky\carodej.jpg" />
     <Resource Include="Obrazky\clovek.jpg" />
     <Resource Include="Obrazky\elf.jpg" />
@@ -322,6 +198,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Obrazky\rozcestnik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\vybratvybavenibg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\sekera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\mec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\hul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\moria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\mordor.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

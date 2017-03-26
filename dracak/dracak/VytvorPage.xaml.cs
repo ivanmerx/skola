@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using dracak.Morie;
 namespace dracak
 {
     /// <summary>
@@ -24,6 +23,7 @@ namespace dracak
         private Page presmerovani;
         private Page presmerovani2;
         private string text1;
+        private string text2;
         private string texthlavni;
         private string nazevbuttonu;
         public string Text1
@@ -36,7 +36,18 @@ namespace dracak
             {
                 text1 = value;
                 pribeh.Text = text1;
-
+            }
+        }
+        public string Text2
+        {
+            get
+            {
+                return text2;
+            }
+            set
+            {
+                text2 = value;
+                nadpis.Text = text2;
             }
         }
 
